@@ -1,2 +1,2 @@
-# ENEE_3141_DigiComm
-Collection of the labs completed for Digital Communication Fall 2023 
+# LAB 1 AM Modulation & Radio 
+

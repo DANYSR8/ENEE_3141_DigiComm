@@ -29,7 +29,7 @@ actting as a seftey net. As for the the "Audio Sink" it simply connects the proj
 Since the overall lab is asking to create a AM radio that receives the corresponding signals. Just like any other signals, AM uses carrier signals in order to
 transmist the infomation long distances without having to use nearly as much power. Recovering these AM signals can be done "product demodulation" which is taking the transmitted signal and multiplying 
 it by the a sine wave with the same carrier frequency. This will demodulate the transmitted signal to the original information but will still contain nosie. The block below shows the GUI Range varible that is 
-used in the produect demodulation.    
+used in the product demodulation as "Ch0" frequency".    
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/02efbce8-c3f1-4f22-a4fb-f9f4482b438f)
 

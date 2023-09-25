@@ -34,7 +34,7 @@ used in the product demodulation as "Ch0" frequency".
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/02efbce8-c3f1-4f22-a4fb-f9f4482b438f)
 
 ### Frequency Filter 
-After using product demodulation the whole signal is still now avialbe to be heard, but this means all frequency will be heard at the same time which will make the signal be hard to listen or overall inaudiable.
+After using product demodulation the whole signal is still now avaliable to be heard, but this means all frequency will be heard at the same time which will make the signal be hard to listen or overall inaudiable.
 Therefore a low pass filter is used to take out the frequecys we want to hear which in this case is anything below 5kHz. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/92826523-d991-4b1d-bc1d-0881ef160b13)

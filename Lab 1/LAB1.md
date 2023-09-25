@@ -40,24 +40,27 @@ Therefore a low pass filter is used to take out the frequecys we want to hear wh
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/92826523-d991-4b1d-bc1d-0881ef160b13)
 
 ### AM Demod
-Even after filtering the signal with a lowpass filter, the signal still contains unwated noise that will be pass through the low pass filter. Since the an ideal low pass filter would be a "brick wall " filter  
-which would be a filter that cutoff directly at the specific cutoff point. But in reality it ramps down and surpass the cutoff point. 
+Even after filtering the signal with a lowpass filter, the signal still contains unwated noise that will be pass through the low pass filter. Since the an ideal low pass filter would be a "brick wall " filter  which would be a filter that cutoff directly at the specific cutoff point. But in reality it ramps down and surpass the cutoff point. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/23fda64b-88a5-4bec-bbaf-88be2df2b245)
 
 (add a comparison of a brick wall filter and a real filter)
 
 ### Rational Resampler 
-This last block is a "rational resampler" which is used to match the frequency between two block, since if the incomming signal is running/smapling at a frequecy greater than the reciving decive the diffence between the two will "chop up" the signal. For example our incoming signal was being sampled at 400kHz but our speakers was being sampled at 32kHz, therefore the resampler matching the frequencys of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general this resample is done by multpliy and or dividing by a certin constants. In our case we divided by 400kHz and followed it up by multiplying by 32kHz. 
+This last fucntional block is a "rational resampler" which is used to match the frequency between two block, since if the incomming signal is running/sampling at a frequecy greater than the reciving device the diffence between the two will "chop up" the signal. For example our incoming signal was being sampled at 400kHz but our speakers was being sampled at 32kHz, therefore the resampler matches the frequencys of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general this resample is done by multpliy and or dividing by a certin constants. In our case we divided by 400kHz and followed it up by multiplying by 32kHz. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bc2bee30-626c-460c-871a-6141247523c9)
 
 
 
 ### GUI Blocks 
+These blocks serve as the visual elements taht will be displayed on the graphical user interface (GUI). It this case we used a "Frequency Sink" which displays the fast fourier transform (FFT) of the entire transmitted signal. The "Waterfall Sink" displays time moiving down such as a waterfall, frequency on the horizontal axis and the magnetude of the specific frequecy displayed as diffennt shades of color as to show its intensity.
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
 
 ## Working GUI & AM Radio 
+Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to it values. As for the graphs below you can see the waterfall display showing the intensity of the current frequecy range , and the frequency sink displaying the FFT of the incomming signals.  
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3c564670-a2d1-44c5-b894-1450f1449abb)
 

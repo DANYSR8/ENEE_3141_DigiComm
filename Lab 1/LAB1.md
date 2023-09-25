@@ -15,11 +15,11 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 ### Project Setup and Variable Declaration 
 These few block contains the setup of the project file as well as the variables used in the AM Radio. Speciccly the GUI Range blocks are
 specficlly useful for having user inputs that can be changed while running the the programs. All that is need is to have the start, stop, and step
-size  of the variable that we wish to adjust while in the program. 
+size of the variable that we wish to adjust while in the program. 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f6535e33-9a67-48fe-9a82-d457f2e63acd)
 
 Additionally the two blocks below are used to set up the project aswell, the "throttle" block ensures that device running the project does not over work the CPU, 
-actting as a seftey net. As for the the "Audio Sink" it simply connects the project to the device's speaker as lon as the correct frequency is inputed into the block.
+actting as a seftey net. As for the the "Audio Sink" it simply connects the project to the device's speaker as long as the correct frequency is inputed into the block.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/169d9c64-f594-45ea-a7b8-f69b61c7c336)

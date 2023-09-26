@@ -45,6 +45,7 @@ Even after filtering the signal with a lowpass filter, the signal still contains
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/23fda64b-88a5-4bec-bbaf-88be2df2b245)
 
 Idea Brick Wall Low Pass Filter VS Typical Response
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d551e4a9-063f-4699-9ce2-ac48536ac715)
 
 ### Rational Resampler 

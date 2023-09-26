@@ -44,7 +44,8 @@ Even after filtering the signal with a lowpass filter, the signal still contains
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/23fda64b-88a5-4bec-bbaf-88be2df2b245)
 
-(add a comparison of a brick wall filter and a real filter)
+Idea Brick Wall Low Pass Filter VS Typical Response
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d551e4a9-063f-4699-9ce2-ac48536ac715)
 
 ### Rational Resampler 
 This last fucntional block is a "rational resampler" which is used to match the frequency between two block, since if the incomming signal is running/sampling at a frequecy greater than the reciving device the diffence between the two will "chop up" the signal. For example our incoming signal was being sampled at 400kHz but our speakers was being sampled at 32kHz, therefore the resampler matches the frequencys of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general this resample is done by multpliy and or dividing by a certin constants. In our case we divided by 400kHz and followed it up by multiplying by 32kHz. 

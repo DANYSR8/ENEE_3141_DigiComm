@@ -9,7 +9,8 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
 ## Overall Flow Block Diagram of AM Radio 
-![Overall Flow Diagram](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/de5b59ed-4711-4832-b04f-6e5d05ca4ef0)
+![Overall Flow Diagram ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a28ff324-1bdb-441d-999b-6d31753da57b)
+
 
 ## Flow Block Diagrams Explanation 
 ### Project Setup and Variable Declaration 

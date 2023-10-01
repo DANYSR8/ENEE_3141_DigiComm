@@ -37,7 +37,7 @@ The overall lab is asking to create an FM radio that receives the corresponding 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ba20824-fc71-42c1-b070-c5f84ffbf748)
 
 ### FM Demod
-"This block demodulates a band-limited, complex down-converted FM channel into the the original baseband signal, optionally applying deemphasis. Low pass filtering is done on the resultant signal.(GNURadio)"
+"This block demodulates a band-limited, complex down-converted FM channel into the the original baseband signal, optionally applying deemphasis. Low pass filtering is done on the resultant signal.(GNURadio)(ADD MORE?)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/99021832-41f4-4435-acbf-13bd46afc58f)
 

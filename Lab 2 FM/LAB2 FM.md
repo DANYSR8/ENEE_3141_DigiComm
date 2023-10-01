@@ -60,5 +60,5 @@ These blocks serve as the visual elements that will be displayed on the graphica
 ## Working GUI & AM Radio 
 Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values. As for the graphs below you can see the waterfall display showing the intensity of the current frequency range, and the frequency sink displaying the FFT of the incoming signals.    
 
-![Project GUI](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3c564670-a2d1-44c5-b894-1450f1449abb)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ac6e1b5d-71ec-4cf5-a4fa-30a28f6af287)
 

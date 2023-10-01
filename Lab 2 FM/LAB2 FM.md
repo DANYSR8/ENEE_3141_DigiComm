@@ -26,21 +26,19 @@ Additionally, the three blocks below are used to set up the project as well, the
 
 ![Throttle Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
 ![Audio Sink Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/169d9c64-f594-45ea-a7b8-f69b61c7c336)
-![Multiply Constant](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c42e2599-dba9-4fe3-a46a-726256b1359b)
+![Multiply Constant](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/186ca5b1-4f06-45e9-9ec0-ecb3610b7efa)
+
 
 
 
 ### Signal Receiving 
-The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals in order to transmit the information long distances without having to use nearly as much power.Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency.This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frquency varible laidout in the setup of the project. The figure also contains a rational resampler that bring sthe "RTL_SDR" block sample rate to the nesseacy 400kHz for the "FM Demod". As a side not the "FM Demod" internally contains a low pass filter which in can be seen by the audio pass and stop values on the block itself.   
+The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals in order to transmit the information long distances without having to use nearly as much power.Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency.This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frquency varible laidout in the setup of the project. The figure also contains a rational resampler that bring sthe "RTL_SDR" block sample rate to the nesseacy 400kHz for the "FM Demod". As a side note the "FM Demod" internally contains a low pass filter which in can be seen by the audio pass and stop values on the block itself.   
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ba20824-fc71-42c1-b070-c5f84ffbf748)
 
 ### FM Demod
 
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7f113960-6c90-461e-b12b-0853ed6d4bdf)
-
-
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/99021832-41f4-4435-acbf-13bd46afc58f)
 
 
 ### Rational Resampler 

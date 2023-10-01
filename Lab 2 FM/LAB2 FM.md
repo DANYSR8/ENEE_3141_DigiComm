@@ -1,53 +1,52 @@
-# LAB 1 AM Modulation & Radio
+# LAB 2 FM Modulation & Radio
 
 ## Objective of the Lab 
 This lab aim to accomplish the following using GNURadio Software and SDR Radio Reciver Kit: 
 
-+ Build an AM Radio 
++ Build an FM Radio 
 + Abillty to tune to differnet radio staions
 + Contain a visual graphical user interface (GUI)
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
 ## Overall Flow Block Diagram of AM Radio 
-![Overall Flow Diagram ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a28ff324-1bdb-441d-999b-6d31753da57b)
+
+![Overall Flow Diagram](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aea1a788-a73d-4ef6-885f-dedbe7b0d299)
+
 
 
 ## Flow Block Diagrams Explanation 
 ### Project Setup and Variable Declaration 
-These few blocks contain the setup of the project file as well as the variables used in the AM Radio. Specially the GUI Range blocks are
+These few blocks contain the setup of the project file as well as the variables used in the FM Radio. Specially the GUI Range blocks are
 specifically useful for having user inputs that can be changed while running the the programs. All that is needed is to have the start, stop, and step size of the variable that we wish to adjust while in the program.
 
-![Project Setup](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f6535e33-9a67-48fe-9a82-d457f2e63acd)
+![Project Setup](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ef856da1-ba6c-4340-a4e0-4407a896b8d1)
 
-Additionally, the two blocks below are used to set up the project as well, the "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net. As for the "Audio Sink," it simply connects the project to the device's speaker as long as the correct frequency is input into the block.
+
+Additionally, the three blocks below are used to set up the project as well, the "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net. As for the "Audio Sink," it simply connects the project to the device's speaker as long as the correct frequency is input into the block. Lastly the "multiply constant" block is used to add an additional adjustable varriable which is the volume of the signal.It is essentially takes the final signal before being played by the speakers and boostes it by multiply a scalar value.   
 
 ![Throttle Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
 ![Audio Sink Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/169d9c64-f594-45ea-a7b8-f69b61c7c336)
+![Multiply Constant](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c42e2599-dba9-4fe3-a46a-726256b1359b)
+
 
 
 ### Signal Receiving 
-The overall lab is asking to create an AM radio that receives the corresponding signals. Just like any other signal, AM uses carrier signals in order to transmit the information long distances without having to use nearly as much power. Recovering these AM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency. This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable that is 
-used in the product demodulation as "Ch0" frequency".   
+The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals in order to transmit the information long distances without having to use nearly as much power.Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency.This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frquency varible laidout in the setup of the project. The figure also contains a rational resampler that bring sthe "RTL_SDR" block sample rate to the nesseacy 400kHz for the "FM Demod". As a side not the "FM Demod" internally contains a low pass filter which in can be seen by the audio pass and stop values on the block itself.   
 
-![RTL SDR Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/02efbce8-c3f1-4f22-a4fb-f9f4482b438f)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ba20824-fc71-42c1-b070-c5f84ffbf748)
 
-### Frequency Filter 
-After using product demodulation the whole signal is still now available to be heard, but this means all frequencies will be heard at the same time which will make the signal be hard to listen to or overall inaudible.
-Therefore a low pass filter is used to take out the frequencies we want to hear which in this case is anything below 5kHz. 
+### FM Demod
 
-![Low Pass Filter](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/92826523-d991-4b1d-bc1d-0881ef160b13)
 
-### AM Demod
-Even after filtering the signal with a lowpass filter, the signal still contains unwanted noise that will be passed through the low-pass filter. Since the an ideal low pass filter would be a "brick wall " filter which would be a filter that cuts off directly at the specific cutoff point. But in reality, it ramps down and surpasses the cutoff point. 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7f113960-6c90-461e-b12b-0853ed6d4bdf)
 
-![AM Demod](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/23fda64b-88a5-4bec-bbaf-88be2df2b245)
 
-![Idea Brick Wall Low Pass Filter VS Typical Response](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d551e4a9-063f-4699-9ce2-ac48536ac715)
+
 
 ### Rational Resampler 
-This last functional block is a "rational resampler" which is used to match the frequency between two blocks, since if the incoming signal is running/sampling at a frequency greater than the receiving device the difference between the two will "chop up" the signal. For example, our incoming signal was being sampled at 400kHz but our speakers were being sampled at 32kHz, therefore the resampler matches the frequencies of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general, this resampling is done by multiplying and or dividing by certain constants. In our case, we divided by 400kHz and followed it up by multiplying by 32kHz.
+This last functional block is a "rational resampler" which is used to match the frequency between two blocks, since if the incoming signal is running/sampling at a frequency greater than the receiving device the difference between the two will "chop up" the signal.The resampler matches the frequencies of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general, this resampling is done by multiplying and or dividing by certain constants. In our case, we divided by 400kHz and followed it up by multiplying by 48kHz.
 
-![Resampler](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bc2bee30-626c-460c-871a-6141247523c9)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ff4c158b-f42c-4115-8e37-5d66f39f3cba)
 
 
 

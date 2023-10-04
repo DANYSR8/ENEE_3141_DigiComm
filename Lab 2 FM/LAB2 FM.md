@@ -22,7 +22,7 @@ specifically useful for having user inputs that can be changed while running the
 ![Project Setup](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ef856da1-ba6c-4340-a4e0-4407a896b8d1)
 
 
-Additionally, the three blocks below are used to set up the project as well, the "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net. As for the "Audio Sink," it simply connects the project to the device's speaker as long as the correct frequency is input into the block. Lastly the "multiply constant" block is used to add an additional adjustable varriable which is the volume of the signal.It is essentially takes the final signal before being played by the speakers and boostes it by multiply a scalar value.   
+Additionally, the three blocks below are used to set up the project as well, the "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net. As for the "Audio Sink," it simply connects the project to the device's speaker as long as the correct frequency is input into the block. Lastly the "multiply constant" block is used to add an additional adjustable varriable which is the volume of the signal.It is essentially takes the final signal before being played by the speakers and boostes it by multiplying a scalar value.   
 
 ![Throttle Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
 ![Audio Sink Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/169d9c64-f594-45ea-a7b8-f69b61c7c336)
@@ -32,12 +32,12 @@ Additionally, the three blocks below are used to set up the project as well, the
 
 
 ### Signal Receiving 
-The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals in order to transmit the information long distances without having to use nearly as much power.Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency.This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frquency varible laidout in the setup of the project. The figure also contains a rational resampler that bring sthe "RTL_SDR" block sample rate to the nesseacy 400kHz for the "FM Demod". As a side note the "FM Demod" internally contains a low pass filter which in can be seen by the audio pass and stop values on the block itself.   
+The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals to transmit the information long distances without having to use nearly as much power. Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency. This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frequency variable laid out in the setup of the project. The figure also contains a rational resampler that brings the "RTL_SDR" block sample rate to the necessary 400kHz for the "FM Demod". As a side note the "FM Demod" internally contains a low pass filter which can be seen by the audio pass and stop values on the block itself.   
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ba20824-fc71-42c1-b070-c5f84ffbf748)
 
 ### FM Demod
-"This block demodulates a band-limited, complex down-converted FM channel into the the original baseband signal, optionally applying deemphasis. Low pass filtering is done on the resultant signal.(GNURadio)(ADD MORE?)
+"This block demodulates a band-limited, complex down-converted FM channel into the original baseband signal, optionally applying deemphasis. Low pass filtering is done on the resultant signal. (GNURadio). In essence, this is the main component that takes the signal and allows us to recover the transmitted signal and convert it to its original form. Additionally, this block also contains a lowpass filter used to select the frequencies we want to hear.  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/99021832-41f4-4435-acbf-13bd46afc58f)
 

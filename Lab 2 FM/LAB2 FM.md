@@ -30,10 +30,15 @@ The overall theroy behind Frequency modulation is that its a varration of Phase 
 
 The modulation signal can expnaded using trignomentirc idetaitny show in figure 5 and can be represent as these Bassel Functions contianing a modulation index (figure 6)    
 
+5)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7b1447ba-b2ae-4abb-a760-1efd5465b060)
+
+6)
 
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/59630d1e-519e-442d-97e4-4629de872166)
 
+In enssen these Bassel Function show how the the higher the modulation index is the more sidebands are used to transmited the modulated signal and power distributed anmong those side bands, the  figure below shows this realtionship   
 
 ## Overall Flow Block Diagram of FM Radio 
 

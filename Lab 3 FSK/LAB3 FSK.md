@@ -133,9 +133,9 @@ Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/1a633756-a66b-4275-9334-4c4b38f45a2f)
 
-Big FSK Deviation 
+Big FSK Deviation Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ba88a43e-8f46-4a2e-aab1-cd4728574895)
 
-Small FSK  Deviation 
+Small FSK  Deviation Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/634c0d5f-b5af-4604-8be0-11cf0292df00)

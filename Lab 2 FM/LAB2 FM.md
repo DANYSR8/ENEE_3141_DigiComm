@@ -12,18 +12,26 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way. The modulation techquie involves "Varying the frequency by adding a time varying component to the carrier frequency" which would be done with first equation below .Which can be converted into an angle using the 2nd and 3rd realtion below, which can ultimley be subsituded into the singal/wave equation to get the final representation of the modulated signal (final equation below). 
 
 1)
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)  
+
+    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)
+
 2)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a999b860-6278-4afa-a3a8-82e6e62f6f31)
+
 3)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d19b74c1-5cba-4b0a-ba1f-a697ed3c6119)
+
 4)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/062194e0-6813-47b0-adf2-56091ab05aaa)
 
+
 The modulation signal can expnaded using trignomentirc idetaitny show in figure 5 and can be represent as these Bassel Functions contianing a modulation index (figure 6)    
-5)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7b1447ba-b2ae-4abb-a760-1efd5465b060)
-6)
+
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/59630d1e-519e-442d-97e4-4629de872166)
 
 

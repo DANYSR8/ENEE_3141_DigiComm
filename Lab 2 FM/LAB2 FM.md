@@ -13,7 +13,7 @@ The overall theroy behind Frequency modulation is that its a varration of Phase 
 
 1)
 
-    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/005c72f9-04e3-4490-846d-7d733cfb514f)
 
 2)
 

@@ -110,3 +110,32 @@ Overall FM is used due to its ability to reduce noise and improve the quality of
 
 #### WORK IN PROGRESS 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3514d22f-b6ae-43eb-9500-9d6d3f21f902)
+
+Vector Source (-1,1) 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05354ecd-4868-48e7-be3b-775ec43b124e)
+
+Vector Source (-1,-1,-1,-1, 1)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/989fd9b1-22d0-4b2e-9cbe-993da127094d)
+
+
+Vector Source (1,1,1,1, -1)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/39cf01f6-7c9e-4a5c-a73e-6656591dcfc2)
+
+Vector Source (1,-1,1,-1, 1)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee5c38fd-1ade-44e6-8e32-de512dee45ba)
+
+
+Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/1a633756-a66b-4275-9334-4c4b38f45a2f)
+
+Big FSK Deviation 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ba88a43e-8f46-4a2e-aab1-cd4728574895)
+
+Small FSK  Deviation 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/634c0d5f-b5af-4604-8be0-11cf0292df00)

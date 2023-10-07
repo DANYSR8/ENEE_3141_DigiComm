@@ -1,4 +1,4 @@
-S# LAB 2 FM Modulation & Radio
+# LAB 2 FM Modulation & Radio
 
 ## Objective of the Lab 
 This lab aim to accomplish the following using GNURadio Software and SDR Radio Reciver Kit: 

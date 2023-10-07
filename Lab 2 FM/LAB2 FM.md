@@ -101,4 +101,8 @@ Overall this is the window that would pop up if the project were to be run. As y
 ## Uses of FM 
 Overall FM is used due to its ability to reduce noise and improve the quality of signals, modulate without having to increase its power, and its resistant to interference.These pros show why this form of modulation is used in Brodcasting, Wireless Communications, and Navigation Systems. Some possible projects for using this modulation techiques involve "Surveillance Bug", " Vehicle Tracking System", and "Wireless Intercom System". All of which uses FM to transmit the data over long distances.      
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/786d5744-d1ab-453b-b29c-7133a39dc932)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3a57e98d-6bab-45d9-abcc-ad9b53130bc5)
+
+
 * (https://www.sciencedirect.com/topics/engineering/frequency-modulation#:~:text=Because%20the%20frequency%20of%20a,times%20that%20of%20AM%20signals.)

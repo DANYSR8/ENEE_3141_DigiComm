@@ -9,7 +9,7 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
 ## FM Theory 
-The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way.This modulation technique involves the manipulation of the carrier frequency by introducing a time-varying component, as depicted in the first equation below. This alteration in frequency can be expressed in angular terms using the second and third relations provided, ultimately yielding the final representation of the modulated signal, as shown in the concluding equation.
+The overall theory behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way.This modulation technique involves the manipulation of the carrier frequency by introducing a time-varying component, as depicted in the first equation below. This alteration in frequency can be expressed in angular terms using the second and third relations provided, ultimately yielding the final representation of the modulated signal, as shown in the concluding equation.
 
 1)
 
@@ -42,7 +42,7 @@ Essentially, these Bessel Functions show how an increase in the modulation index
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3b78eaf-7ff3-4368-a590-0356e7de2a3d)
 
-
+*Equations and figures provided from Intuitive Guide to Principles of Communications By Charan Langton www.complextoreal.com
 
 
 ## Overall Flow Block Diagram of FM Radio 
@@ -98,3 +98,7 @@ Overall this is the window that would pop up if the project were to be run. As y
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ac6e1b5d-71ec-4cf5-a4fa-30a28f6af287)
 
+## Uses of FM 
+Overall FM is used due to its ability to reduce noise and improve the quality of signals, modulate without having to increase its power, and its resistant to interference.These pros show why this form of modulation is used in Brodcasting, Wireless Communications, and Navigation Systems. Some possible projects for using this modulation techiques involve "Surveillance Bug", " Vehicle Tracking System", and "Wireless Intercom System". All of which uses FM to transmit the data over long distances.      
+
+* (https://www.sciencedirect.com/topics/engineering/frequency-modulation#:~:text=Because%20the%20frequency%20of%20a,times%20that%20of%20AM%20signals.)

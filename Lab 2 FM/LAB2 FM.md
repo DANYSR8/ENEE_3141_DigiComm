@@ -9,7 +9,7 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
 ## FM Theory 
-The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way. The modulation techquie involves "Varying the frequency by adding a time varying component to the carrier frequency" which would be done with first equation below .Which can be converted into an angle using the 2nd and 3rd realtion below, which can ultimley be subsituded into the singal/wave equation to get the final representation of the modulated signal (final equation below). 
+The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way.This modulation technique involves the manipulation of the carrier frequency by introducing a time-varying component, as depicted in the first equation below. This alteration in frequency can be expressed in angular terms using the second and third relations provided, ultimately yielding the final representation of the modulated signal, as shown in the concluding equation.
 
 1)
 
@@ -28,7 +28,7 @@ The overall theroy behind Frequency modulation is that its a varration of Phase 
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/062194e0-6813-47b0-adf2-56091ab05aaa)
 
 
-The modulation signal can expnaded using trignomentirc idetaitny show in figure 5 and can be represent as these Bassel Functions contianing a modulation index (figure 6)    
+The modulation signal can be further expanded using trigonometric identities in Figure 5 and can be represented through Bessel Functions that incorporate a modulation index (Figure 6)
 
 5)
 
@@ -38,7 +38,7 @@ The modulation signal can expnaded using trignomentirc idetaitny show in figure 
 
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/59630d1e-519e-442d-97e4-4629de872166)
 
-In enssen these Bassel Function show how the the higher the modulation index is the more sidebands are used to transmited the modulated signal and power distributed anmong those side bands, the  figure below shows this realtionship  
+Essentially, these Bessel Functions show how an increase in the modulation index results in the utilization of more sidebands for transmitting the modulated signal, thereby distributing power across these sidebands. The relationship between modulation index and sideband utilization is graphically portrayed below. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3b78eaf-7ff3-4368-a590-0356e7de2a3d)
 

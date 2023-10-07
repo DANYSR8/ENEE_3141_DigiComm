@@ -1,4 +1,4 @@
-# LAB 2 FM Modulation & Radio
+S# LAB 2 FM Modulation & Radio
 
 ## Objective of the Lab 
 This lab aim to accomplish the following using GNURadio Software and SDR Radio Reciver Kit: 
@@ -38,7 +38,10 @@ The modulation signal can expnaded using trignomentirc idetaitny show in figure 
 
    ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/59630d1e-519e-442d-97e4-4629de872166)
 
-In enssen these Bassel Function show how the the higher the modulation index is the more sidebands are used to transmited the modulated signal and power distributed anmong those side bands, the  figure below shows this realtionship   
+In enssen these Bassel Function show how the the higher the modulation index is the more sidebands are used to transmited the modulated signal and power distributed anmong those side bands, the  figure below shows this realtionship  
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3b78eaf-7ff3-4368-a590-0356e7de2a3d)
+
 
 ## Overall Flow Block Diagram of FM Radio 
 

@@ -9,9 +9,9 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
 ## FM Theory 
-The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way. The modulation techquie involves "Varying the frequency by adding a time varying component to the carrier frequency" which would be done with first equation below.
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)
-Which can be converted into an angle using the realtion below, which can them be ultimley subsituded into the singal/wave equation to get this  
+The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way. The modulation techquie involves "Varying the frequency by adding a time varying component to the carrier frequency" which would be done with first equation below.Which can be converted into an angle using the 2nd realtion below, which can ultimley be subsituded into the singal/wave equation to get this 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)  
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a999b860-6278-4afa-a3a8-82e6e62f6f31)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d19b74c1-5cba-4b0a-ba1f-a697ed3c6119)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/062194e0-6813-47b0-adf2-56091ab05aaa)

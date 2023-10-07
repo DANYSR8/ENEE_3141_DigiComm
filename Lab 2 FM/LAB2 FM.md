@@ -8,6 +8,17 @@ This lab aim to accomplish the following using GNURadio Software and SDR Radio R
 + Contain a visual graphical user interface (GUI)
 + GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
+## FM Theory 
+The overall theroy behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way. The modulation techquie involves "Varying the frequency by adding a time varying component to the carrier frequency" which would be done with first equation below.
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/770e9bab-edbf-4cd6-a604-6cc1bc127c0c)
+Which can be converted into an angle using the realtion below, which can them be ultimley subsituded into the singal/wave equation to get this  
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a999b860-6278-4afa-a3a8-82e6e62f6f31)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d19b74c1-5cba-4b0a-ba1f-a697ed3c6119)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/062194e0-6813-47b0-adf2-56091ab05aaa)
+
+
+
+
 ## Overall Flow Block Diagram of FM Radio 
 
 ![Overall Flow Diagram](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aea1a788-a73d-4ef6-885f-dedbe7b0d299)
@@ -54,6 +65,7 @@ These blocks serve as the visual elements that will be displayed on the graphica
 
 ![Waterfall Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
 ![Frequency Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
+
 
 ## Working GUI & AM Radio 
 Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values. As for the graphs below you can see the waterfall display showing the intensity of the current frequency range, and the frequency sink displaying the FFT of the incoming signals.    

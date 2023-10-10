@@ -59,12 +59,13 @@ The entire flow diagram is broken down into two sections, FSK transmiter and FSK
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8ddf3bd1-c784-40c5-b7cb-6e5c91ce1fe4)
 
-Once the vector source is modulated it is then multiply by a carrier signal which in this case is a Cosine with a frequecy of 2 MHz, this will ultimiley give us our FSK modulated signal to be transmited. This transmisted signal can be seen below 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/496a0ea5-f5ca-4833-b57c-ece3e4d69b6f)
+Once the vector source is modulated it is then multiply by a carrier signal which in this case is a Cosine with a frequecy of 2 MHz, this will ultimiley give us our FSK modulated signal to be transmited. This transmisted signal can be seen below as well as the labeled corresponding bits of the orginal source 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/773d0bb8-8f60-4641-b2ac-86e77f53451c)
+
 
 
 ### Signal Receiving 
-This section of the flow diagram displayes the FSK reciver , where the signal is taken and filted and demodulatioed  and ultimley fed into the binary slicer to determine its value,  below the block diagrams the figures displays each step of the flow diagram showing how each steps makes the signal clearer eventurly getting to a clear binary form.  
+This section of the flow diagram displayes the FSK reciver , where the signal from the "Signal Trasmiting" section is taken and filtered, demodulatioed  and ultimley fed into the binary slicer to determine its value,  below the block diagrams the figures displays each step of the flow diagram showing how each steps makes the signal clearer eventurly getting to a clear binary form.  
 
 ![RX section](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca216563-84bf-4ce9-8d43-6c7092ed06c3)
 

@@ -119,6 +119,10 @@ Small FSK  Deviation Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
 
 Overall FSK modulation is an essential part of modern wireless communication systems and offers robustness against noise and interference. It is a straightforward modulation technique suitable for transmitting digital data. Whether it's remote control systems, telemetry devices, or data modems, FSK's compatibility with digital data has made it indispensable in the modern tech landscape. In essence, FSK stands as a reliable and efficient modulation technique powering seamless communication in today's digital world. Some possible projects using this technique can be a car keys decoder/repeater, simple RC car controllers, or a wireless data logger, these projects can provide a suitable way of applying this modulation technique
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/57d35baa-07b0-4a8a-be36-8e74266379eb)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/496dd296-d297-46d6-957c-b1ceb59fa495)
+
+
 
 
 

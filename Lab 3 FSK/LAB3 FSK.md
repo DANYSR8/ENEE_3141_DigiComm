@@ -23,20 +23,19 @@ These few blocks contain the setup of the project file as well as the variables 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8496155f-3457-4c95-8dd3-3a74c9072eec)
 
 
-Additionally, the four blocks below are used to set up the project as well, the " repeat" block simply takes the given input and repeats it a certin amount of times, within the normal time spand of the orgianl singal a clear exapmle can be seen in figure 1. 
+Additionally, the three blocks below are used to set up the project as well, the " repeat" block simply takes the given input and repeats it a certin amount of times, within the normal time spand of the orgianl singal a clear exapmle can be seen in figure 1. 
 
 1)
 
-![Repeat Example](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4ff6e9e0-3ab3-4d41-b0f4-938408584e13)
-
 ![Repeat](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/be0d8e23-c162-495f-89c8-48d3b84aec2b)
 
+![Repeat Example](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4ff6e9e0-3ab3-4d41-b0f4-938408584e13)
 
 2) The "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net.
 
 ![Throttle Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
 
-3) As for the "binary slicer" block it simply takes an input signal and if the magnitude of the signal is anything greater that 0 the blcok will output a 1, else the block with output a 0  
+3) As for the "binary slicer" block it simply takes an input signal and if the magnitude of the signal is anything greater that 0 the blcok will output a 1, else the block with output a 0. Additionaly we add on the "Add Const' block in order to add on a -0.5 to the singal in order to make it easier for the bianry slicer to detemine wheather the signal should be 0 or 1 (acting as a DC offset for the signal).  
 
 ![Binary Slicer](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4e20f397-5153-489c-9146-9f8faaaa50f0)
 
@@ -59,9 +58,15 @@ Once the vector source is modulated it is then multiply by a carrier signal whic
 
 
 ### Signal Receiving 
+This section of the flow diagram displayes the FSK reciver , where the signal is taken and filted and demodulatioed  and ultimley fed into the binary slicer to determine its value,  below the block diagrams the figures displays each step of the flow diagram showing how each steps makes the signal clearer eventurly getting to a clear binary form.  
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca216563-84bf-4ce9-8d43-6c7092ed06c3)
+![RX section](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca216563-84bf-4ce9-8d43-6c7092ed06c3)
 
+![FIR Filter Out](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05587996-51b4-4f3c-9f3d-697d0b88e186)
+
+![Demod Out](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bfce5d49-9f3b-466b-a5a9-6196c20bc698)
+
+![Binary Slicer](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/6d6daebd-2a83-4436-832c-58e8836002b4)
 
 
 
@@ -73,7 +78,7 @@ These blocks serve as the visual elements that will be displayed on the graphica
 ![Time Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/04ea58e7-dfff-45c8-a248-4a9e3e0a96d7)
 
 
-## Working GUI & AM Radio 
+## Working GUI & FSK Reciverer and Transmiter  
 Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variey of figures below display differnt binary messages that where sent through this flow diagram and show how the messages were being sent.   
 
 #### Vector Source (-1,1) 

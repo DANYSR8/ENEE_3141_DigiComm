@@ -41,6 +41,12 @@ Additionally, the three blocks below are used to set up the project as well, the
 
 Lastly the "Uchar to Float" block converts the singal from a unsigned character into a float to be used later down the flow diagram  
 
+### GUI Blocks - The Visual Elements  
+These blocks serve as the visual elements that will be displayed on the graphical user interface (GUI).In this case, we used a "Frequency Sink" which displays the fast Fourier transform (FFT) of the entire transmitted signal. The "Waterfall Sink" displays time moving down such as a waterfall, frequency on the horizontal axis, and the magnitude of the specific frequency displayed as different shades of color to show its intensity. And lastly the time sink displayes the signal in the time domain, which is usful in visulalying the signals in a domain most people are acoustom to. 
+
+![Waterfall Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
+![Frequency Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
+![Time Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/04ea58e7-dfff-45c8-a248-4a9e3e0a96d7)
 
 
 
@@ -70,16 +76,8 @@ This section of the flow diagram displayes the FSK reciver , where the signal is
 
 
 
-### GUI Blocks 
-These blocks serve as the visual elements that will be displayed on the graphical user interface (GUI).In this case, we used a "Frequency Sink" which displays the fast Fourier transform (FFT) of the entire transmitted signal. The "Waterfall Sink" displays time moving down such as a waterfall, frequency on the horizontal axis, and the magnitude of the specific frequency displayed as different shades of color to show its intensity. And lastly the time sink displayes the signal in the time domain, which is usful in visulalying the signals in a domain most people are acoustom to. 
-
-![Waterfall Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
-![Frequency Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
-![Time Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/04ea58e7-dfff-45c8-a248-4a9e3e0a96d7)
-
-
 ## Working GUI & FSK Reciverer and Transmiter  
-Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variey of figures below display differnt binary messages that where sent through this flow diagram and show how the messages were being sent.   
+Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variey of figures below display differnt binary messages that where sent through this flow diagram and show how the messages were being sent and recived.   
 
 #### Vector Source (-1,1) 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05354ecd-4868-48e7-be3b-775ec43b124e)

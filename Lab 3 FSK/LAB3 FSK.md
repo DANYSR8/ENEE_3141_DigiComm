@@ -78,7 +78,7 @@ This section of the flow diagram displayes the FSK reciver , where the signal fr
 
 
 ## Working GUI & FSK Reciverer and Transmiter  
-Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variey of figures below display differnt binary messages that where sent through this flow diagram and show how the messages were being sent and recived.   
+Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variey of figures below display differnt binary messages that where sent through this flow diagram and show how the messages were being sent and recived.  
 
 #### Vector Source (-1,1) 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05354ecd-4868-48e7-be3b-775ec43b124e)
@@ -97,6 +97,8 @@ Overall this is the window that would pop up if the project were to be run. As y
 #### Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/1a633756-a66b-4275-9334-4c4b38f45a2f)
 
+
+As we can see the width of each segment of the final signal correspons to the amount of repeated values in the binary sequences from the orginal message .   
 
 #### FSK Deviation 
 Additionaly these last two fiugre displays how a greater FSK deviation allows for easier detection of 1's and 0's but occupy more bandwidth 

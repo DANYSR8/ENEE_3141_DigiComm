@@ -3,106 +3,126 @@
 ## Objective of the Lab 
 This lab aim to accomplish the following using GNURadio Software and SDR Radio Reciver Kit: 
 
-+ Build an FM Radio 
-+ Abillty to tune to differnet radio staions
++ Build an FSK Transmitter and Reciver 
++ Understand the theroy behind this form of modulatiuon 
 + Contain a visual graphical user interface (GUI)
-+ GUI contains Fast Fourier Transform (FFT) and waterfall visual representation
 
-## FM Theory 
-The overall theory behind Frequency modulation is that its a varration of Phase modulation and in gernal they operate in the same way.This modulation technique involves the manipulation of the carrier frequency by introducing a time-varying component, as depicted in the first equation below. This alteration in frequency can be expressed in angular terms using the second and third relations provided, ultimately yielding the final representation of the modulated signal, as shown in the concluding equation.
+## FSK Theory 
+The overall thery of FSK otherwise known as Frequency Shift Keying (FSK) is a modulation technique that operates on the same principle as Frequency Modulation (FM) but in a digital domian. In FSK, digital data is transmitted by switching between two different carrier frequencies, one representing a low bit (typically denoted as '0') and the other representing a high bit ('1'). The key advantage of using two carriers with distinct frequencies lies in the ease of distinguishing between binary values in the received signal. The difference in frequency between these carriers is referred to as the FSK deviation, or simply frequency deviation. A crucial point to note is that the larger the frequency deviation, the clearer the distinction between individual bits in the transmitted signal. However, there is a trade-off, as a greater frequency deviation requires a wider portion of the frequency spectrum, which can limit the number of FSK signals that can coexist within that spectrum. Below is a time domain representaion of FSK modulation. 
 
-1)
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/005c72f9-04e3-4490-846d-7d733cfb514f)
-
-2)
-
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a999b860-6278-4afa-a3a8-82e6e62f6f31)
-
-3)
-
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d19b74c1-5cba-4b0a-ba1f-a697ed3c6119)
-
-4)
-
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/062194e0-6813-47b0-adf2-56091ab05aaa)
-
-
-The modulation signal can be further expanded using trigonometric identities in Figure 5 and can be represented through Bessel Functions that incorporate a modulation index (Figure 6)
-
-5)
-
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7b1447ba-b2ae-4abb-a760-1efd5465b060)
-
-6)
-
-   ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/59630d1e-519e-442d-97e4-4629de872166)
-
-Essentially, these Bessel Functions show how an increase in the modulation index results in the utilization of more sidebands for transmitting the modulated signal, thereby distributing power across these sidebands. The relationship between modulation index and sideband utilization is graphically portrayed below. 
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3b78eaf-7ff3-4368-a590-0356e7de2a3d)
-
-*Equations and figures provided from Intuitive Guide to Principles of Communications By Charan Langton www.complextoreal.com
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5aeed92b-d09c-4853-a76f-9ef87304d398)
 
 
 ## Overall Flow Block Diagram of FM Radio 
 
-![Overall Flow Diagram](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aea1a788-a73d-4ef6-885f-dedbe7b0d299)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f5f9b909-d234-46f9-9cd0-ba63dd0e0302)
 
 
 
 ## Flow Block Diagrams Explanation 
 ### Project Setup and Variable Declaration 
-These few blocks contain the setup of the project file as well as the variables used in the FM Radio. Specially the GUI Range blocks are
-specifically useful for having user inputs that can be changed while running the the programs. All that is needed is to have the start, stop, and step size of the variable that we wish to adjust while in the program.
+These few blocks contain the setup of the project file as well as the variables used in the FSK Transmitter and Receiver. Specially the GUI Range blocks are specifically useful for having user inputs that can be changed while running the the programs. All that is needed is to have the start, stop, and step size of the variable that we wish to adjust while in the program.
 
-![Project Setup](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ef856da1-ba6c-4340-a4e0-4407a896b8d1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8496155f-3457-4c95-8dd3-3a74c9072eec)
 
 
-Additionally, the three blocks below are used to set up the project as well, the "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net. As for the "Audio Sink," it simply connects the project to the device's speaker as long as the correct frequency is input into the block. Lastly the "multiply constant" block is used to add an additional adjustable varriable which is the volume of the signal.It is essentially takes the final signal before being played by the speakers and boostes it by multiplying a scalar value.   
+Additionally, the three blocks below are used to set up the project as well, the 'repeat' block, for instance, takes the provided input and repeats it a specified number of times, all within the original signal's regular timeframe. You can observe a clear illustration of this in Figure 1, where Signal 1 represents the original signal, and Signal 2 showcases the result of applying a 'repeat' block with a value of 5. As a result, the signal is repeated five times.
+
+1)
+
+![Repeat](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/be0d8e23-c162-495f-89c8-48d3b84aec2b)
+
+![Repeat Example](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4ff6e9e0-3ab3-4d41-b0f4-938408584e13)
+
+2) The "throttle" block ensures that the device running the project does not overwork the CPU, acting as a safety net.
 
 ![Throttle Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9edba9b0-a13d-4500-ad57-c6e7c01fa28b)
-![Audio Sink Block](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/169d9c64-f594-45ea-a7b8-f69b61c7c336)
-![Multiply Constant](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/186ca5b1-4f06-45e9-9ec0-ecb3610b7efa)
 
+3) As for the "binary slicer" block it simply takes an input signal and if the magnitude of the signal is anything greater than 0 the block will output a 1, else the block with output a 0. Additionally, we add on the "Add Const' block in order to add on a -0.5 to the signal in order to make it easier for the binary slicer to determine whether the signal should be 0 or 1 (acting as a DC offset for the signal).    
+
+![Binary Slicer](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4e20f397-5153-489c-9146-9f8faaaa50f0)
+
+Lastly the "Uchar to Float" block converts the singal from a unsigned character into a float to be used later down the flow diagram.  
+
+### GUI Blocks - The Visual Elements  
+These blocks serve as the visual elements that will be displayed on the graphical user interface (GUI).In this case, we used a "Frequency Sink" which displays the fast Fourier transform (FFT) of the entire transmitted signal. The "Waterfall Sink" displays time moving down such as a waterfall, frequency on the horizontal axis, and the magnitude of the specific frequency displayed as different shades of color to show its intensity. And lastly, the time sink displays the signal in the time domain, which is useful in visualizing the signals in a domain most people are accustomed to.
+
+![Waterfall Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
+![Frequency Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
+![Time Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/04ea58e7-dfff-45c8-a248-4a9e3e0a96d7)
+
+
+
+### Signal Transmitting 
+The entire flow diagram is broken down into two sections, FSK transmitter and FSK receiver. The section below displays the transmitter section where the vector source (otherwise known as the message we wish to transmit) is fed into a "frequency mod " block which as the name applies modulates the input to a frequency-modulated output. To be more specific GnuRadio states " This block is an input amplitude controlled complex sine. It outputs a signal, which has a momentary phase increase that is proportional to the sensitivity and input amplitude. More specifically, takes a real, baseband signal (x_m[n]) and outputs a frequency-modulated signal (y[n]) according to the equations below.  
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3e11c3e5-048b-4742-bcf4-047eaf29b39f)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e79d747c-0378-43fc-b100-7bdfc06c61ab)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8ddf3bd1-c784-40c5-b7cb-6e5c91ce1fe4)
+
+Once the vector source is modulated it is then multiplied by a carrier signal which in this case is a Cosine with a frequency of 2 MHz, this will ultimately give us our FSK modulated signal to be transmitted. This transmitted signal can be seen below as well as the labeled corresponding bits of the original source.
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/773d0bb8-8f60-4641-b2ac-86e77f53451c)
 
 
 
 ### Signal Receiving 
-The overall lab is asking to create an FM radio that receives the corresponding signals. Just like any other signal, FM uses carrier signals to transmit the information long distances without having to use nearly as much power. Recovering these FM signals can be done by "product demodulation" which is taking the transmitted signal and multiplying it by the sine wave with the same carrier frequency. This will demodulate the transmitted signal to the original information but will still contain noise. The block below shows the GUI Range variable used in the product demodulation as "Ch0" frequency" which is the center frequency variable laid out in the setup of the project. The figure also contains a rational resampler that brings the "RTL_SDR" block sample rate to the necessary 400kHz for the "FM Demod". As a side note the "FM Demod" internally contains a low pass filter which can be seen by the audio pass and stop values on the block itself.   
+This section of the flow diagram displays the FSK receiver, where the signal from the "Signal Transmitting" section is taken and filtered, demodulated, and ultimately fed into the binary slicer to determine its value,  below the block diagrams the figures display each step of the flow diagram showing how each step makes the signal clearer eventually getting to a clear binary form.
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ba20824-fc71-42c1-b070-c5f84ffbf748)
+![RX section](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca216563-84bf-4ce9-8d43-6c7092ed06c3)
 
-### FM Demod
-"This block demodulates a band-limited, complex down-converted FM channel into the original baseband signal, optionally applying deemphasis. Low pass filtering is done on the resultant signal. (GNURadio). In essence, this is the main component that takes the signal and allows us to recover the transmitted signal and convert it to its original form. Additionally, this block also contains a lowpass filter used to select the frequencies we want to hear.  
+![FIR Filter Out](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05587996-51b4-4f3c-9f3d-697d0b88e186)
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/99021832-41f4-4435-acbf-13bd46afc58f)
+![Demod Out](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bfce5d49-9f3b-466b-a5a9-6196c20bc698)
 
-
-### Rational Resampler 
-This last functional block is a "rational resampler" which is used to match the frequency between two blocks, since if the incoming signal is running/sampling at a frequency greater than the receiving device the difference between the two will "chop up" the signal.The resampler matches the frequencies of the speaker by Decimation ( which reduces the sample rate) and Interpolation (which increases the sample rate). In general, this resampling is done by multiplying and or dividing by certain constants. In our case, we divided by 400kHz and followed it up by multiplying by 48kHz.
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ff4c158b-f42c-4115-8e37-5d66f39f3cba)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2346310d-16d0-452f-b3ff-b59eeb12a5fc)
 
 
 
-### GUI Blocks 
-These blocks serve as the visual elements that will be displayed on the graphical user interface (GUI).In this case, we used a "Frequency Sink" which displays the fast Fourier transform (FFT) of the entire transmitted signal. The "Waterfall Sink" displays time moving down such as a waterfall, frequency on the horizontal axis, and the magnitude of the specific frequency displayed as different shades of color to show its intensity.
 
-![Waterfall Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/443a98d8-41cd-42c7-8fd3-0fb1093e2ce0)
-![Frequency Sink](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/36902073-1f68-4fc4-b85a-dd15d9ae755f)
+## Working GUI & FSK Reciverer and Transmiter  
+Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values in this case the FSK deviation variable. The variety of figures below displays different binary messages that were sent through this flow diagram and shows how the messages were being sent and received.  
 
+#### Vector Source (-1,1) 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/05354ecd-4868-48e7-be3b-775ec43b124e)
 
-## Working GUI & AM Radio 
-Overall this is the window that would pop up if the project were to be run. As you can see the "GUI Range" variables are displayed at the top with some sliders to allow changes to its values. As for the graphs below you can see the waterfall display showing the intensity of the current frequency range, and the frequency sink displaying the FFT of the incoming signals.    
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ac6e1b5d-71ec-4cf5-a4fa-30a28f6af287)
-
-## Uses of FM 
-Overall FM is used due to its ability to reduce noise and improve the quality of signals, modulate without having to increase its power, and its resistant to interference.These pros show why this form of modulation is used in Brodcasting, Wireless Communications, and Navigation Systems. Some possible projects for using this modulation techiques involve "Surveillance Bug", " Vehicle Tracking System", and "Wireless Intercom System". All of which uses FM to transmit the data over long distances.      
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/786d5744-d1ab-453b-b29c-7133a39dc932)
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3a57e98d-6bab-45d9-abcc-ad9b53130bc5)
+#### Vector Source (-1,-1,-1,-1, 1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/989fd9b1-22d0-4b2e-9cbe-993da127094d)
 
 
-* (https://www.sciencedirect.com/topics/engineering/frequency-modulation#:~:text=Because%20the%20frequency%20of%20a,times%20that%20of%20AM%20signals.)
+#### Vector Source (1,1,1,1, -1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/39cf01f6-7c9e-4a5c-a73e-6656591dcfc2)
+
+#### Vector Source (1,-1,1,-1, 1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee5c38fd-1ade-44e6-8e32-de512dee45ba)
+
+
+#### Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/40adf939-77bc-45aa-9b31-08dd239b08da)
+
+
+As we can see the width of each segment of the final signal corresponds to the amount of repeated values in the binary sequences from the original message. 
+
+#### FSK Deviation 
+Additionally, these last two figure displays how a greater FSK deviation allows for easier detection of 1's and 0's but occupy more bandwidth.  
+
+Big FSK Deviation Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5ededf3f-42a8-4b46-8dea-229263214c69)
+
+
+Small FSK  Deviation Vector Source (-1,-1,-1, 1, 1, 1, -1,-1,1,1,-1,1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e6f67648-5263-4cf4-9b17-03259988ae3d)
+
+
+## Uses of FSK
+
+Overall FSK modulation is an essential part of modern wireless communication systems and offers robustness against noise and interference. It is a straightforward modulation technique suitable for transmitting digital data. Whether it's remote control systems, telemetry devices, or data modems, FSK's compatibility with digital data has made it indispensable in the modern tech landscape. In essence, FSK stands as a reliable and efficient modulation technique powering seamless communication in today's digital world. Some possible projects using this technique can be a car keys decoder/repeater, simple RC car controllers, or a wireless data logger, these projects can provide a suitable way of applying this modulation technique
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/57d35baa-07b0-4a8a-be36-8e74266379eb)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/496dd296-d297-46d6-957c-b1ceb59fa495)
+
+
+
+
+

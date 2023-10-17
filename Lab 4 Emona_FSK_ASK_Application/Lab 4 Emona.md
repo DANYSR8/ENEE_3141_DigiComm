@@ -65,28 +65,34 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 ## ASK Modulation & Demodulation 
 ### ASK Modulation 
 #### Block Diagram Representation 
-TEXT HERE 
+
+The block diagrams below provide a high-level abstraction of how ASK (Amplitude Shift Keying) modulation can be generated. The first block diagram employs a "Master Signal" block, in which a 2kHz sine wave is input to a "Dual Analog Switch" controlled by a "Sequence Generator" block. This configuration simulates an On-Off Keying (OOK) signal, wherein the 2kHz sine wave is allowed to pass through the switch only when the sequence generator outputs a high signal to the "Dual Analog Switch." This ultimately results in a signal representation where a digital 1 is depicted by the sine wave, and a digital 0 is represented by a flat line.  
+
+The second block diagram functions similarly to what was mentioned above. However, in this case, the "VCO" block replaces the input sine wave, enabling users to modify the frequency of the input signal.  
 
 ![ASK Modulatiom Blocks](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4b1da712-1979-4876-aefa-f9a67c899f4c)
 
 #### Emona Modulation Online Results 
 
-TEXT HERE 
+The figures below illustrate how these block diagrams were implemented using the Emona Online Kits, showcasing the outputs from the probe points in the block diagrams. The red signal represents the start bit, signaling the initiation of the sequence generator's string of bits. The blue signal displays the actual bit sequence provided by the sequence generator. Lastly, the yellow signal represents the 'message,' where the sine wave is allowed to pass through when the blue signal is at a digital logic level of 1. This effectively represents the 0's (spaces) and 1's (marks) of the signal. The Last figure just displayes how the VCO signal can be use to adjust the frequency of the sine wave being let through. 
 
-![No VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/fa4be9d9-5e4b-4aea-a4e0-08d235cce9c1)
+![No VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2d94c13b-2b3d-4944-b7dc-b5c28981e82a)
 ![With VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3345da5-2249-4555-ab29-38a8bb413f9b)
 
 
 ### ASK Demodulation 
 #### Block Diagram Represenation 
-TEXT HERE 
+
+The block diagrams below present a high-level abstraction of Amplitude Shift Keying (ASK) demodulation. It illustrates how the modulated signal is directed through a rectifier to eliminate the negative wave components, then passed through a low-pass filter to recover a representation of the original signal from the sequence generator.
+
+The first two figures demonstrate that the lower the frequency cutoff of the filter, the less the output signal resembles a digital signal. Conversely, a higher frequency cutoff results in a signal more closely resembling a digital one. To transform this signal into a clear digital form, a comparator, such as a Schmitt Trigger, is employed. The Schmitt Trigger uses two signals: one is the input signal, and the other is a reference signal. If the input signal exceeds the reference, the Schmitt Trigger outputs a digital 1; if the opposite is true, it outputs a digital 0, effectively refining the digital signal. 
 
 ![ASK Demodulation Blocks](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/81019f43-cf4d-469f-95fb-3accf57f6253)
 
 
 #### Emona Demodulation Online Results 
 
-Text Here 
+The figures below depict the implementation of these block diagrams using the Emona Online Kits. They highlight the outputs from the probe points within the block diagrams. The order of presentation follows the description provided in the previous section, with a primary focus on the Purple signal (Channel 4), which represents the recovery of the original signal from the modulated carrier.
 
 ![No Comparator Low FC](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9321bcee-4549-4508-bd1c-fd29fa2c0d40)
 ![No Comparator HIGH FC](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3ef52ab3-e435-4885-8153-4bbedb27acb7)
@@ -95,13 +101,14 @@ Text Here
 
 #### ASK with Noise Block Diagram Representation 
 
-TEXT HERE
+The block diagram below illustrates a setup similar to the previous section, with the inclusion of a noise generator integrated into the transmission section of the ASK modulated signal. This noise generator represents real-world interference that the signal may encounter.
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/16a19815-df10-4f79-a10f-fa459e5f67d3)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/776afb2d-c2a7-497d-813d-025315cf6944)
+
 
 #### Emona Demodulation with Nosie Online Results 
 
-TEXT HERE 
+The figure ultimately illustrates how the noise encountered by the signal can significantly impact the recovery of the transmitted signal, as depicted by the yellow signal (Channel 3). While there remains a semblance of the intended signal, an increase in noise levels would likely hinder the accurate recovery of the signal overall.
 
 ![Nosie Added before Rectifier](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4498158-fd44-40d3-aa55-ecd66c829e32)
 

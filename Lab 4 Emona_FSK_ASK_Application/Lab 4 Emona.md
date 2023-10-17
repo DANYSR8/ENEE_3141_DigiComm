@@ -123,7 +123,7 @@ The block diagram below illustrates the generation of a Frequency Shift Keying (
 
 #### Lab Equiment FSK Modulation Results  
 
-We can observe the modulated signal, represented by the blue waveform, and the corresponding digital signal that controls the overall appearance of the modulated signal, depicted in yellow. Additionally, we notice that the frequency spectrum displays two peaks at both of the blue signal's frequencies used to modulate the digital signal.
+We can observe the modulated signal, represented by the blue waveform, and the corresponding digital signal that controls the overall appearance of the modulated signal, depicted in orange. Additionally, we notice that the frequency spectrum displays two peaks at both of the blue signal's frequencies used to modulate the digital signal.
 
 ![FSK generation](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f1835708-63bd-4219-ada7-235088aeae31)
 
@@ -138,9 +138,9 @@ The following block diagrams illustrate the complete process of demodulating the
 
 #### Lab Equiment FSK Modulation Results  
 
-The figures below illustrates each of the steps mentioned previously and their respective outputs corresponding to each step.
+The figures below illustrate each of the previously mentioned steps and their respective outputs corresponding to each step. To delve into further detail, the first figure displays the removal of the higher frequencies, which correspond to the signal's "marks". This is why we observe the blue signal approaching zero when the orange digital signal is at a logic level of 1. The last two figure just display the recovery of the modulated signal.   
  
-![Low Pass Filter Output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/19add0c9-77de-4d13-92a3-72a200bd6f08)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f8feaf40-87b2-444f-80b4-884adbefd6e3)
 ![Recifier output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a3139692-9c0f-486d-8a13-ecd10c586c47)
 ![Comparator](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e2ac4e16-fb13-453c-823d-3b780de75b36)
 

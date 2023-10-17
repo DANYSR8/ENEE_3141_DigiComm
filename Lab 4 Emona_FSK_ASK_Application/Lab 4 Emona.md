@@ -164,6 +164,8 @@ The figures below illustrate each of the previously mentioned steps and their re
 
 #### FSK Demodulation Discusions
 Q4--- When using the low pass filter the maing singal that is being pick out is the space ( logic 0) frequecy. 
+
 Q5--- The filter signai look similar to an ASK signal, but in this case the sine wave is only diaplyed durring logic level 0 
+
 Q6--- To clean up this signal a comparatorcan be used. This is done by  employing two signals: one is the input signal, and the other serves as a reference signal. When the input signal surpasses the reference, the Schmitt Trigger produces a digital 1; if the opposite occurs, it outputs a digital 0, effectively refining the digital signal.
 

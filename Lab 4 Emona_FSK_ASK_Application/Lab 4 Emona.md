@@ -79,6 +79,14 @@ The figures below illustrate how these block diagrams were implemented using the
 ![No VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2d94c13b-2b3d-4944-b7dc-b5c28981e82a)
 ![With VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3345da5-2249-4555-ab29-38a8bb413f9b)
 
+#### ASK Modulation Discusion 
+
+Q1: The relationship between digital signals and the presence of the carrier signal is that the carrier is only transmitted when the digital signal is at a high logic level.
+
+Q2: The voltage of the ASK signal when the digital signal is at logic 0 is close to 0V, as the digital signal controls when the sine wave passes through the dual analog switch.
+
+Q3: The features suggesting that this ASK signal is an AM (Amplitude Modulation) signal are the changes in amplitude between 0 and 1 logic levels.
+
 
 ### ASK Demodulation 
 #### Block Diagram Represenation 
@@ -112,6 +120,12 @@ The figure ultimately illustrates how the noise encountered by the signal can si
 
 ![Nosie Added before Rectifier](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4498158-fd44-40d3-aa55-ecd66c829e32)
 
+#### ASK Demodulation Discusions
+
+Q4: The recovered signal is not an exact replica of the original. It's obtained by using a rectifier to eliminate the negative portions of the signal, but this leaves variations in the amplitudes of the positive sections. Although we can employ a low-pass filter to mitigate this, some small variations may still persist.
+
+Q5 & Q6: This issue can be addressed by utilizing a comparator. A comparator employs two signals: one is the input signal, and the other serves as a reference signal. When the input signal surpasses the reference, the Schmitt Trigger produces a digital 1; if the opposite occurs, it outputs a digital 0, effectively refining the digital signal.
+ 
 
 ## FSK Modulation & Demodulation 
 ### FSK Modulation 
@@ -126,6 +140,10 @@ The block diagram below illustrates the generation of a Frequency Shift Keying (
 We can observe the modulated signal, represented by the blue waveform, and the corresponding digital signal that controls the overall appearance of the modulated signal, depicted in orange. Additionally, we notice that the frequency spectrum displays two peaks at both of the blue signal's frequencies used to modulate the digital signal.
 
 ![FSK generation](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f1835708-63bd-4219-ada7-235088aeae31)
+
+#### FSK Modulation Discusions
+Q1 & Q2 & Q3--- The terms 'spaces' and 'marks' correspond to logic levels 0 and 1, respectively. The one with a higher frequency is 'marks'."
+
 
 
 ### FSK Demodulation
@@ -144,7 +162,8 @@ The figures below illustrate each of the previously mentioned steps and their re
 ![Recifier output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a3139692-9c0f-486d-8a13-ecd10c586c47)
 ![Comparator](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e2ac4e16-fb13-453c-823d-3b780de75b36)
 
-
-
-
+#### FSK Demodulation Discusions
+Q4--- When using the low pass filter the maing singal that is being pick out is the space ( logic 0) frequecy. 
+Q5--- The filter signai look similar to an ASK signal, but in this case the sine wave is only diaplyed durring logic level 0 
+Q6--- To clean up this signal a comparatorcan be used. This is done by  employing two signals: one is the input signal, and the other serves as a reference signal. When the input signal surpasses the reference, the Schmitt Trigger produces a digital 1; if the opposite occurs, it outputs a digital 0, effectively refining the digital signal.
 

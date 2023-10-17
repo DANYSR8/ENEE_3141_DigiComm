@@ -117,13 +117,13 @@ The figure ultimately illustrates how the noise encountered by the signal can si
 ### FSK Modulation 
 #### FSK Modulation Block Representation 
 
-TEXT HERE 
+The block diagram below illustrates the generation of a Frequency Shift Keying (FSK) modulation signal. The "Sequence Generator" is employed to produce a digital signal that determines when the signal transitions between higher and lower frequencies, effectively distinguishing between marks and spaces. The Voltage-Controlled Oscillator (VCO) regulates this transition by manipulating the frequency of the signal's marks. The higher the frequency of these marks, the greater the distinction between them.
 
 ![FSK Blcoks Modulation ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5609058d-0dae-43da-90ca-87f744bfd5bb)
 
 #### Lab Equiment FSK Modulation Results  
 
-TEXT HERE
+We can observe the modulated signal, represented by the blue waveform, and the corresponding digital signal that controls the overall appearance of the modulated signal, depicted in yellow. Additionally, we notice that the frequency spectrum displays two peaks at both of the blue signal's frequencies used to modulate the digital signal.
 
 ![FSK generation](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f1835708-63bd-4219-ada7-235088aeae31)
 
@@ -131,14 +131,15 @@ TEXT HERE
 ### FSK Demodulation
 #### FSK Demodulation Block Representation 
 
-TEXT HERE
+The following block diagrams illustrate the complete process of demodulating the signal. The first diagram demonstrates the isolation of the main frequency, while the second diagram depicts the utilization of a rectifier to eliminate the negative components of the signal. The third and final diagram illustrates the application of a comparator to refine the signal by employing a Schmitt Trigger, as discussed in a manner similar to the ASK Demodulation section mentioned earlier.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ebdea8f9-ec12-4514-8a28-63b9c330371e)\
 
 
 #### Lab Equiment FSK Modulation Results  
 
-TEXT HERE 
+The figures below illustrates each of the steps mentioned previously and their respective outputs corresponding to each step.
+ 
 ![Low Pass Filter Output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/19add0c9-77de-4d13-92a3-72a200bd6f08)
 ![Recifier output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a3139692-9c0f-486d-8a13-ecd10c586c47)
 ![Comparator](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e2ac4e16-fb13-453c-823d-3b780de75b36)

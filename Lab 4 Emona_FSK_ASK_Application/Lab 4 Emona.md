@@ -73,6 +73,10 @@ TEXT HERE
 
 TEXT HERE 
 
+![No VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/fa4be9d9-5e4b-4aea-a4e0-08d235cce9c1)
+![With VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f3345da5-2249-4555-ab29-38a8bb413f9b)
+
+
 ### ASK Demodulation 
 #### Block Diagram Represenation 
 TEXT HERE 
@@ -84,6 +88,11 @@ TEXT HERE
 
 Text Here 
 
+![No Comparator Low FC](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9321bcee-4549-4508-bd1c-fd29fa2c0d40)
+![No Comparator HIGH FC](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3ef52ab3-e435-4885-8153-4bbedb27acb7)
+![With Comparator](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e24fcf7f-0537-43bd-ab57-2224e0bd763a)
+
+
 #### ASK with Noise Block Diagram Representation 
 
 TEXT HERE
@@ -93,6 +102,9 @@ TEXT HERE
 #### Emona Demodulation with Nosie Online Results 
 
 TEXT HERE 
+
+![Nosie Added before Rectifier](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4498158-fd44-40d3-aa55-ecd66c829e32)
+
 
 ## FSK Modulation & Demodulation 
 ### FSK Modulation 
@@ -106,6 +118,9 @@ TEXT HERE
 
 TEXT HERE
 
+![FSK generation](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f1835708-63bd-4219-ada7-235088aeae31)
+
+
 ### FSK Demodulation
 #### FSK Demodulation Block Representation 
 
@@ -117,6 +132,11 @@ TEXT HERE
 #### Lab Equiment FSK Modulation Results  
 
 TEXT HERE 
+![Low Pass Filter Output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/19add0c9-77de-4d13-92a3-72a200bd6f08)
+![Recifier output](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a3139692-9c0f-486d-8a13-ecd10c586c47)
+![Comparator](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e2ac4e16-fb13-453c-823d-3b780de75b36)
+
+
 
 
 

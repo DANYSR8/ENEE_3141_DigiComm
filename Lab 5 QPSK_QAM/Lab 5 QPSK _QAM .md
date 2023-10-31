@@ -61,16 +61,39 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 
 ![Bandpass Filter](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b29bc666-22db-4e4e-b60f-30f5bb3eea93)
 
+### Phase Shifter 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/30e230c7-14d0-4fde-953e-7123101de01f)
+
+
+### Serial to Parallel Converter 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9603b1fd-60cf-4b18-82ba-8cd7a4a6f4cf)
+
+
+### RC Low Pass Filter 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/728ce720-33fe-4d83-9d6e-24720215ad7f)
+
+
+### Multiplyer 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
+
 
 ## QPSK Modulation & Demodulation 
 ### QPSK Modulation 
 #### Block Diagram Representation 
 
+![Overall 4 ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/284c3d63-90b1-4f60-b6c9-7dbf5490b1c3)
 
 
 #### Lab Equipment QPSK Modulation Results 
 
+![PART 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f32bb8a9-2345-4a57-9d7a-6d3736e341a9)
 
+
+![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
 
 
 #### QPSK Modulation Discusion 
@@ -79,12 +102,13 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 ### QPSK Demodulation 
 #### Block Diagram Represenation 
 
+![Overall Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/661bddf0-5edb-49ca-94a8-67858e656c27)
 
 
 
 #### Lab Equipment QPSK Demodulation Results 
 
-
+![part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e8dce75c-7cc3-4048-94bd-65c583b2dcf1)
 
 
 #### QPSK  Demodulation Discusions
@@ -94,9 +118,14 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 ### QAM Modulation 
 #### QAM Modulation Block Representation 
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea5e8d8c-ce1f-43e3-9965-7e8081e9ff0e)
 
 
 #### Lab Equiment QAM Modulation Results  
+
+![Part 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/82e79a2d-17ec-49b0-aba4-d8bab9d6a0af)
+
+![Part 2](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5e077cb6-bfc6-49f5-b099-849e6f3187d5)
 
 
 #### QAM Modulation Discusions
@@ -105,10 +134,16 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 ### QAM Demodulation
 #### QAM Demodulation Block Representation 
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/44dc509c-26c4-4517-a3e2-3ff81a49618d)
 
 
 #### Lab Equiment QAM Demodulation Results  
 
+![Part 3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d83c770e-ace4-4cdb-b9cb-f797dc862220)
+
+![Part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aba58fa1-4f9a-445c-af18-bd97bd9b3232)
+
+![Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2c136450-74a5-460f-9310-c02da9fdb2b9)
 
 
 #### QAM Demodulation Discusions

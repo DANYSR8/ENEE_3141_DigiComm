@@ -62,21 +62,25 @@ This block simulates a signal traversing a wire or cable channel, such as a tele
 ![Bandpass Filter](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b29bc666-22db-4e4e-b60f-30f5bb3eea93)
 
 ### Phase Shifter 
+This block performs a phase shift which is a delay in time between the input and output. This block allows the user to determine the amount of phase shifting.  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/30e230c7-14d0-4fde-953e-7123101de01f)
 
 
 ### Serial to Parallel Converter 
+This blocks takes in serial dits and brekas them into two parrallel data being trasnmit at the same time, In esence the block splits the streams of 1's and 0's, dividing the stream into odd and even bits. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9603b1fd-60cf-4b18-82ba-8cd7a4a6f4cf)
 
 
 ### RC Low Pass Filter 
+This block is a fixed low pass filter comprised of an resitor and capacitor, blocking higher frequency signals approxamitly around 2kHz 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/728ce720-33fe-4d83-9d6e-24720215ad7f)
 
 
 ### Multiplyer 
+This blocks takes two signals and multpily them together and output the product of the two withe an aproximate scale facot of 1  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
 

@@ -85,7 +85,10 @@ This blocks takes two signals and multpily them together and output the product 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
 
 
-## QPSK Modulation & Demodulation 
+## QPSK Theroy 
+
+Quadrature Phase Shift Keying (QPSK) is a digital modulation method that represents binary data using four distinct phase states: 0, 90, 180, and 270 degrees. Each phase state corresponds to a unique pair of binary bits, allowing two bits to be transmitted per symbol. This allows QPSK  to be bandwidth efficent.
+
 ### QPSK Modulation 
 #### Block Diagram Representation 
 
@@ -107,7 +110,8 @@ This second block displays one of the two split digtial signal being multpying b
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
 ![Part 2 Result](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/806d6dba-459f-4d2f-ac4b-c214301dc7ec)
 
-Finally when the two 
+Finally when the two PSK <sub>I</sub> and PSK <sub>Q</sub> signals are added together we get the final QPSK singal that is ready to be transmitted. This signal has encoded the digtial message using both amplitude and phase, which is ultimely due to the use of the orthangonal baisis functions of sine and cosine to help encode the symbols of the message. 
+
 ![part 3 Reslts ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c665a52e-56d0-46e6-806b-02a323befd06)
 
 
@@ -117,19 +121,20 @@ Finally when the two
 ### QPSK Demodulation 
 #### Block Diagram Represenation 
 
-![Overall Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/661bddf0-5edb-49ca-94a8-67858e656c27)
+Our Emona kit could not demodiulate the whole signal and recover both PSK <sub>I</sub> and PSK <sub>Q</sub>, due to the amount if modules aviable on the kit, but the kit is capable to recover just one of the PSK signals. This is what the figure below displays,  how we would need to multply by a known carrier signal which is called the "lost carrier"  and then use our filtering techiques to pick out and clean the signals.  
 
+![Overall Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/661bddf0-5edb-49ca-94a8-67858e656c27)
 
 
 #### Lab Equipment QPSK Demodulation Results 
 
-The three pictures below display how changing the phase when multply durring the demodulation step have affect on the signal which can be seen 
+The three pictures below display how when trying to revocer the singal the phase of the known "lost carrier" and that carrier can be out of phase of the signal that is trying to be demoudulated. Being out of phases casues these interfences of between the two  PSK <sub>I</sub> and PSK <sub>Q</sub> signals, since the overacrching idea of this modulation techwuie is having these signal being orthogal inorder to pervent such interfences. Hence we used the "Phase Shifter" block to bring the "Lost Carrier" back into phase. Doing so displays the last figure in this section of images were the output of the Lowpass filter more closely matchs the orgial digtial signial displayed in orange. 
 
 ![part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e8dce75c-7cc3-4048-94bd-65c583b2dcf1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f4d964b1-4a6e-4851-8130-6b7381edcaa4)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ff5a39c-5007-4a59-95dd-ec85baa2709d)
 
-Taking the signals above and running them through a compator we get the signal below that are "Clean up" 
+Although the pvricous figures displays a somewhat clear digtial signal being recover if any nose where to be present the waveform could become diffucity to uderstand. So to help prevent that and clean up the signal a compartor can be used to minimze this. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/561ccbb7-9d75-4b95-88cf-0ebb00be2933)
 

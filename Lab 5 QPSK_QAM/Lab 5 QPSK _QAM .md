@@ -80,7 +80,7 @@ This block is a fixed low pass filter comprised of an resitor and capacitor, blo
 
 
 ### Multiplyer 
-This blocks takes two signals and multpily them together and output the product of the two withe an aproximate scale facot of 1  
+This blocks takes two signals and multpily them together and output the product of the two withe an aproximate scale factor of 1  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
 
@@ -94,10 +94,16 @@ This blocks takes two signals and multpily them together and output the product 
 
 #### Lab Equipment QPSK Modulation Results 
 
+The first block displays the digtial message that was split into two binary message which can be see in the blue and orange waveforms 
+
 ![PART 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f32bb8a9-2345-4a57-9d7a-6d3736e341a9)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4c74f640-e8f2-4ef5-abc6-f0ab43a6f0c7)
+
 
 
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
+![Part 2 Result](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/806d6dba-459f-4d2f-ac4b-c214301dc7ec)
+![part 3 Reslts ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c665a52e-56d0-46e6-806b-02a323befd06)
 
 
 #### QPSK Modulation Discusion 
@@ -112,10 +118,24 @@ This blocks takes two signals and multpily them together and output the product 
 
 #### Lab Equipment QPSK Demodulation Results 
 
+The three pictures below display how changing the phase when multply durring the demodulation step have affect on the signal which can be seen 
+
 ![part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e8dce75c-7cc3-4048-94bd-65c583b2dcf1)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f4d964b1-4a6e-4851-8130-6b7381edcaa4)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ff5a39c-5007-4a59-95dd-ec85baa2709d)
+
+Taking the signals above and running them through a compator we get the signal below that are "Clean up" 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/561ccbb7-9d75-4b95-88cf-0ebb00be2933)
+
+We can also see how supsectiple a QPSK signal, by using the channel moduke to simulate the signal traveling through the air being interpcept by noise  
+![20](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3f06471a-6efa-490b-91e9-574f4ead69b2)
+![6](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/106981f4-f92a-4350-8f9a-7485ebc5216e)
+![0](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d155791e-5aa6-4bdd-8077-dace89e5f13c)
 
 
 #### QPSK  Demodulation Discusions
+
 
 
 ## QAM Modulation & Demodulation 
@@ -127,9 +147,19 @@ This blocks takes two signals and multpily them together and output the product 
 
 #### Lab Equiment QAM Modulation Results  
 
+
+
 ![Part 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/82e79a2d-17ec-49b0-aba4-d8bab9d6a0af)
+![1kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ec335874-3a90-4bc2-af1b-fd7391361d0f)
+
 
 ![Part 2](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5e077cb6-bfc6-49f5-b099-849e6f3187d5)
+![2kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/560320df-3890-4e3d-904a-e754acbef986)
+
+
+The overall Addition of the two signals above result in the signal below 
+
+![Addition](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/035af735-2800-48a8-a319-7da460c763c8)
 
 
 #### QAM Modulation Discusions
@@ -144,10 +174,18 @@ This blocks takes two signals and multpily them together and output the product 
 #### Lab Equiment QAM Demodulation Results  
 
 ![Part 3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d83c770e-ace4-4cdb-b9cb-f797dc862220)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/611736c0-2df8-41cb-a24f-89fc005c37f6)
+
 
 ![Part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aba58fa1-4f9a-445c-af18-bd97bd9b3232)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b5333441-5a7c-4f4a-a67a-87be29021896)
 
 ![Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2c136450-74a5-460f-9310-c02da9fdb2b9)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8778f707-246a-42df-8ff7-692d4e6b2db5)
+
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/91076ab9-d2ab-45a8-a72e-ff332b717cac)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5d28e4ec-e1d2-46aa-8bf0-464ce9436c52)
 
 
 #### QAM Demodulation Discusions

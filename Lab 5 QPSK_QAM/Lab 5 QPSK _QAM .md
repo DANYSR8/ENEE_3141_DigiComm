@@ -89,22 +89,25 @@ This blocks takes two signals and multpily them together and output the product 
 ### QPSK Modulation 
 #### Block Diagram Representation 
 
+The overall block diagram displays the end goal for this section. It displays the complete generation of a QPSK signal, going from a digtal signal that is split up the data from odd and even bits, where each is multiply by a basis fucntion, either a sine or cosine. Each signal is then added together giving the overall QPSK singal that will be transimited.
+
 ![Overall 4 ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/284c3d63-90b1-4f60-b6c9-7dbf5490b1c3)
 
 
 #### Lab Equipment QPSK Modulation Results 
 
-The first block displays the digtial message that was split into two binary message which can be see in the blue and orange waveforms 
+This first figure displays the digtial message that was split into two binary message which can be see in the blue and orange waveforms 
 
 ![PART 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f32bb8a9-2345-4a57-9d7a-6d3736e341a9)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4c74f640-e8f2-4ef5-abc6-f0ab43a6f0c7)
 
+This second block displays one of the two split digtial signal being multpying by a baisis function. When probing one of outputs of the multplier block we see the bluewave form, that looks like a plain sinisol wave but with aburt changes in phase. These are the transitions points of the digital singal where it change from 1 to 0 or vice versa. To help distisuhing the signals these two outputs of the multpiy block the signals are denoted as PSK <sub>I</sub> and PSK <sub>Q</sub> 
 
 
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
 ![Part 2 Result](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/806d6dba-459f-4d2f-ac4b-c214301dc7ec)
 
-After the adition of the two signals above the result is below 
+Finally when the two 
 ![part 3 Reslts ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c665a52e-56d0-46e6-806b-02a323befd06)
 
 

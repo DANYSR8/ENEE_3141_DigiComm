@@ -85,7 +85,7 @@ This blocks takes two signals and multpily them together and output the product 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
 
 
-## QPSK Theroy 
+## QPSK Theory  
 
 Quadrature Phase Shift Keying (QPSK) is a digital modulation method that represents binary data using four distinct phase states: 0, 90, 180, and 270 degrees. Each phase state corresponds to a unique pair of binary bits, allowing two bits to be transmitted per symbol. This allows QPSK  to be bandwidth efficent.
 
@@ -110,7 +110,7 @@ This second block displays one of the two split digtial signal being multpying b
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
 ![Part 2 Result](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/806d6dba-459f-4d2f-ac4b-c214301dc7ec)
 
-Finally when the two PSK <sub>I</sub> and PSK <sub>Q</sub> signals are added together we get the final QPSK singal that is ready to be transmitted. This signal has encoded the digtial message using both amplitude and phase, which is ultimely due to the use of the orthangonal baisis functions of sine and cosine to help encode the symbols of the message. 
+Finally when the two PSK <sub>I</sub> and PSK <sub>Q</sub> signals are added together we get the final QPSK singal that is ready to be transmitted. This signal has encoded the set digtial symbols using phase, which is ultimely due to the use of the orthangonal baisis functions of sine and cosine to help encode the symbols of the message. 
 
 ![part 3 Reslts ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c665a52e-56d0-46e6-806b-02a323befd06)
 
@@ -138,30 +138,37 @@ Although the pvricous figures displays a somewhat clear digtial signal being rec
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/561ccbb7-9d75-4b95-88cf-0ebb00be2933)
 
-We can also see how supsectiple a QPSK signal, by using the channel moduke to simulate the signal traveling through the air being interpcept by noise  
+
+We can also see how supsectiple a QPSK signal is to noise, by using the channel module to simulate the signal traveling through the air being interpcept by noise. Below are the signals recovered from being introducted to nosie with each figure increasing the amount of noise introdueced. 
+
 ![20](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3f06471a-6efa-490b-91e9-574f4ead69b2)
 ![6](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/106981f4-f92a-4350-8f9a-7485ebc5216e)
 ![0](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d155791e-5aa6-4bdd-8077-dace89e5f13c)
 
+Ultimeltey it can be seen that even with nosie being introduce it is possible to still make out some of the mian constellation points. 
 
 #### QPSK  Demodulation Discusions
 
 
 
-## QAM Modulation & Demodulation 
+## QAM Theory 
+
+Quadrature Amplitude Modulation (QAM) is a modulation method that efficiently encodes digital data for transmission. It combines amplitude and phase variations to represent digital symbols. In a constellation diagram, each point corresponds to a unique combination of amplitude and phase, representing specific bit sequences. Overall QAM is bandwidth-efficient tecnhuie that is widly used and in enese fundemntal to modern communications. 
+
 ### QAM Modulation 
 #### QAM Modulation Block Representation 
+
+The overall block digram below displays a simlar method to QPSK where the and I and Q messages are being mulptliy by the baisis function which are fundemnetial orthogranl to each other, which are then added toghter to form the QAM signal that would be tranmitted. In this case our I and Q messages are analog sinisoial waves.  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea5e8d8c-ce1f-43e3-9965-7e8081e9ff0e)
 
 
 #### Lab Equiment QAM Modulation Results  
 
-
+The figures below displays each of the mulptpyling block outputs, where the first is the 1kHz being used 
 
 ![Part 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/82e79a2d-17ec-49b0-aba4-d8bab9d6a0af)
 ![1kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ec335874-3a90-4bc2-af1b-fd7391361d0f)
-
 
 ![Part 2](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5e077cb6-bfc6-49f5-b099-849e6f3187d5)
 ![2kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/560320df-3890-4e3d-904a-e754acbef986)

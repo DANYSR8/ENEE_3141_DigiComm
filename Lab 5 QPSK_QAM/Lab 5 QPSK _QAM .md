@@ -103,6 +103,8 @@ The first block displays the digtial message that was split into two binary mess
 
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
 ![Part 2 Result](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/806d6dba-459f-4d2f-ac4b-c214301dc7ec)
+
+After the adition of the two signals above the result is below 
 ![part 3 Reslts ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c665a52e-56d0-46e6-806b-02a323befd06)
 
 

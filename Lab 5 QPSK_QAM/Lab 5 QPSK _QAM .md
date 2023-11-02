@@ -92,7 +92,7 @@ Quadrature Phase Shift Keying (QPSK) is a digital modulation method that represe
 ### QPSK Modulation 
 #### Block Diagram Representation 
 
-The overall block diagram displays the end goal for this section. It displays the complete generation of a QPSK signal, going from a digtal signal that is split up the data from odd and even bits, where each is multiply by a basis fucntion, either a sine or cosine. Each signal is then added together giving the overall QPSK singal that will be transimited.
+The overall block diagram illustrates the end goal of this section. It shows the complete generation of a QPSK signal, starting from a digital signal that separates the data into odd and even bits. Each of these bits is then multiplied by a basis function, which can be either a sine or cosine wave. The resulting signals are then summed together, producing the final QPSK signal that will be transmitted
 
 ![Overall 4 ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/284c3d63-90b1-4f60-b6c9-7dbf5490b1c3)
 
@@ -104,7 +104,7 @@ This first figure displays the digtial message that was split into two binary me
 ![PART 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f32bb8a9-2345-4a57-9d7a-6d3736e341a9)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4c74f640-e8f2-4ef5-abc6-f0ab43a6f0c7)
 
-This second block displays one of the two split digtial signal being multpying by a baisis function. When probing one of outputs of the multplier block we see the bluewave form, that looks like a plain sinisol wave but with aburt changes in phase. These are the transitions points of the digital singal where it change from 1 to 0 or vice versa. To help distisuhing the signals these two outputs of the multpiy block the signals are denoted as PSK <sub>I</sub> and PSK <sub>Q</sub> 
+This second block diagram displays one of the two split digital signals being multiplied by a basis function. When probing one of the outputs of the multiplier block, we observe the blue waveform, which resembles a simple sinusoidal wave but with abrupt changes in phase. These abrupt changes signify the transition points of the digital signal, where it shifts from 1 to 0 or vice versa. To distinguish between the signals from the two outputs of the multiplier block, they are denoted as PSK<sub>I</sub> and PSK <sub>Q</sub> 
 
 
 ![PART 2/3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9aa44fab-a485-4614-bd77-df036cdd08ef)
@@ -117,18 +117,19 @@ Finally when the two PSK <sub>I</sub> and PSK <sub>Q</sub> signals are added tog
 
 #### QPSK Modulation Discusion 
 
+Overall the serial-to-parallel converter yields two separate messages, I and Q, each operating at 4kHz, which is half the frequency of the clock signal that drives this block. Furthermore, QPSK shares a fundamental similarity with BPSK in that it leverages the phases of sinusoidal waves to encode digital data. Through this process, the multiplier block generates a sinusoidal waveform with instances of phase shifts indicating transitions in the digital signal, such as changes from 1 to 0 or vice versa. Despite the appearance of a single signal, it's important to note that this signal is actually a composite of two orthogonal BPSK signals, with information encoded in the phase of the carrier.
 
 ### QPSK Demodulation 
 #### Block Diagram Represenation 
 
-Our Emona kit could not demodiulate the whole signal and recover both PSK <sub>I</sub> and PSK <sub>Q</sub>, due to the amount if modules aviable on the kit, but the kit is capable to recover just one of the PSK signals. This is what the figure below displays,  how we would need to multply by a known carrier signal which is called the "lost carrier"  and then use our filtering techiques to pick out and clean the signals.  
+Our Emona kit could not demodiulate the whole signal and recover both PSK <sub>I</sub> and PSK <sub>Q</sub>, due to the amount if modules aviable on the kit, but the kit is capable to recover just one of the PSK signals. This is what the figure below displays,  how we would need to multply by a known carrier signal which is called the "stolen carrier"  and then use our filtering techiques to pick out and clean the signals.  
 
 ![Overall Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/661bddf0-5edb-49ca-94a8-67858e656c27)
 
 
 #### Lab Equipment QPSK Demodulation Results 
 
-The three pictures below display how when trying to revocer the singal the phase of the known "lost carrier" and that carrier can be out of phase of the signal that is trying to be demoudulated. Being out of phases casues these interfences of between the two  PSK <sub>I</sub> and PSK <sub>Q</sub> signals, since the overacrching idea of this modulation techwuie is having these signal being orthogal inorder to pervent such interfences. Hence we used the "Phase Shifter" block to bring the "Lost Carrier" back into phase. Doing so displays the last figure in this section of images were the output of the Lowpass filter more closely matchs the orgial digtial signial displayed in orange. 
+The three pictures below display how when trying to revocer the singal the phase of the known "stolen carrier" and that carrier can be out of phase of the signal that is trying to be demoudulated. Being out of phases casues these interfences of between the two  PSK <sub>I</sub> and PSK <sub>Q</sub> signals, since the overacrching idea of this modulation techwuie is having these signal being orthogal inorder to pervent such interfences. Hence we used the "Phase Shifter" block to bring the "stolen Carrier" back into phase. Doing so displays the last figure in this section of images were the output of the Lowpass filter more closely matchs the orgial digtial signial displayed in orange. 
 
 ![part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e8dce75c-7cc3-4048-94bd-65c583b2dcf1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f4d964b1-4a6e-4851-8130-6b7381edcaa4)
@@ -149,7 +150,7 @@ Ultimeltey it can be seen that even with nosie being introduce it is possible to
 
 #### QPSK  Demodulation Discusions
 
-
+Looking at how we demodulated the QPSK signals, we can see that if the 'stolen carrier' were to be out of phase, interference can occur, causing the signal to have multiple levels. Ultimately, the fundamental idea that the two signals can be transmitted at the same time is due to the carrier/local signals use orthogonal signals that are 90 degrees offset from each other.
 
 ## QAM Theory 
 
@@ -182,18 +183,19 @@ When the two signals above are added together, the resulting waveform is the one
 
 #### QAM Modulation Discusions
 
+Overall QAM modulation,of a analog signal behaves like a Double-Sideband Suppressed Carrier (DSBSC) signal due to the multiplication of two sinusoidal signals: one serving as the carrier, and the other as the message. This multiplication results in three spectral components, with one representing the original message frequency and the other two being the carrier frequency added and subtracted by the same amount as the original signal. This configuration resembles a DSBSC signal, with message 1 exhibiting spectral components at frequencies of 1kHz, 99kHz, and 101kHz, and message 2 featuring spectral components at 2kHz, 98kHz, and 102kHz. When these two messages are combined, all their spectral components are displayed in the frequency spectrum, totaling six spectral components.
 
 ### QAM Demodulation
 #### QAM Demodulation Block Representation 
 
-As with the QPSK demoultaion, we cannot recover both I and Q singals at the same time therfore we apply the same discrimnation method can be applyed to tune in to one of the individual I or Q signals. Employing the a phase shifter along with multpliy it by the "lost carrier" in order to tune into the corrsponding I and Q signals. 
+As with the QPSK demoultaion, we cannot recover both I and Q singals at the same time therfore we apply the same discrimnation method can be applyed to tune in to one of the individual I or Q signals. Employing the a phase shifter along with multpliy it by the "stolen carrier" in order to tune into the corrsponding I and Q signals. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/44dc509c-26c4-4517-a3e2-3ff81a49618d)
 
 
 #### Lab Equiment QAM Demodulation Results  
 
-The figures below displays the discroimation of both 1kHz and 2khz singal and how we used the phase shifter block intorder to tune into the signal. 
+The figures below displays the discrimation of both 1kHz and 2khz singal and how we used the phase shifter block intorder to tune into the signal. 
 
 ![Part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aba58fa1-4f9a-445c-af18-bd97bd9b3232)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b5333441-5a7c-4f4a-a67a-87be29021896)
@@ -206,3 +208,5 @@ These last two pictudes displays the same as above but the Frequcey scpeturm is 
 
 
 #### QAM Demodulation Discusions
+
+When comparing one of the recovered messages to the other, it becomes evident that the message is approximately 20dB weaker than the recovered signal. This similarity is observed when recovering the other signal as well. However, the partial rejection of these signals can pose a problem because it might lead to the receiver inadvertently recovering the opposite signal that it's attempting to decode.

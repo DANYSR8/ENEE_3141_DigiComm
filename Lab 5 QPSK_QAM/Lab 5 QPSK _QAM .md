@@ -193,17 +193,14 @@ As with the QPSK demoultaion, we cannot recover both I and Q singals at the same
 
 #### Lab Equiment QAM Demodulation Results  
 
-![Part 3](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d83c770e-ace4-4cdb-b9cb-f797dc862220)
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/611736c0-2df8-41cb-a24f-89fc005c37f6)
-
+The figures below displays the discroimation of both 1kHz and 2khz singal and how we used the phase shifter block intorder to tune into the signal. 
 
 ![Part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aba58fa1-4f9a-445c-af18-bd97bd9b3232)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b5333441-5a7c-4f4a-a67a-87be29021896)
-
 ![Part 5](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2c136450-74a5-460f-9310-c02da9fdb2b9)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/8778f707-246a-42df-8ff7-692d4e6b2db5)
 
-
+These last two pictudes displays the same as above but the Frequcey scpeturm is zoomed in order to see what happens when either the I or Q is recovred or tune into
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/91076ab9-d2ab-45a8-a72e-ff332b717cac)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/5d28e4ec-e1d2-46aa-8bf0-464ce9436c52)
 

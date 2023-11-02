@@ -85,6 +85,53 @@ This blocks takes two signals and multpily them together and output the product 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9ab71280-caf1-4597-807d-710db841e157)
 
 
+## BPSK Theory 
+Binary Phase Shift Keying (BPSK) is a digital modulation technique, It operates by changing the phase of a carrier signal to represent binary data. In BPSK, there are two distinct phase states: 0 degrees and 180 degrees. Each of these phase states corresponds to a binary symbol, typically 0 and 1. When transmitting, the carrier signal's phase is shifted to either 0 or 180 degrees to indicate the current binary value. This phase change allows for the straightforward and efficient transmission of binary data.
+
+### BPSK Modultaion 
+#### Block Diagram Representation 
+
+The overall generation of a BPSK signal is straightforward, where the digital message is multiplied by a sinusoidal carrier signal. By doing so, the digital signal causes the phase of the sinusoidal carrier to shift by 180 degrees.
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/749374ee-6b2e-4c4f-96b1-c528bbf488c1)
+
+#### Lab Equipment BPSK Modulation Results 
+
+Implementing this, we obtain the figures below, which illustrate an ideal/theoretical representation of what should be observed compared to the actual results seen in the lab. However, the lab picture's time scale is too extended, causing the sinusoidal waveform to appear as a solid block. 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/359a31f4-8a66-4717-874a-30ba71ddd0cf)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7c3c4980-0324-4c2f-9634-34831b0163c9)
+
+#### BPSK Modulation Discusion 
+
+Overall, BPSK modulation can be recognized by observing that changes in logic levels result in a 180-degree shift in the transmitted sinusoidal waveform. This modulation behaves similarly to DSBSC (Double-Sideband Suppressed Carrier) because the multiplication of a sinusoidal carrier with the message leads to the carrier and message having similar envelopes.
+
+### BPSK Demodultaion 
+#### Block Diagram Representation 
+
+As BPSK functions in a manner similar to DSBSC, comparable demodulation techniques can be applied to recover the signal. This process is shown in the figures below, where the BPSK signal is multiplied by a known carrier and passed through a low-pass filter. While this provides the original message, there is the possibility of the signal not being clear enough to distinguish between a 1 or a 0. To refine the signal, a comparator can be employed to enhance clarity and create distinct values that indicate whether the signal represents a 1 or a 0.
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/408a5ecb-e8c3-42fd-a449-70dd6210a466)
+
+#### Lab Equipment BPSK Demodultaion Results 
+
+The two figures below illustrate the output of the low-pass filter, which exhibits a slight distortion in the digital message. In the second figure, we see the use of a comparator to refine and clean up the signal.
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c499c3d5-e196-41aa-bc95-aed7eb1f1031)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f053033e-7fe5-460c-9c07-f1d08e1558a0)
+
+Finally, the three waveforms depict the BPSK signal being subjected to increasing levels of noise, showcasing the resulting recovered signals under different noise conditions. It becomes clear that the recovered signal is ultimately affected most when the noise reaches its maximum level which stands at 0dB, matching the transmitted signal's strength.
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/285680a0-65d0-4cad-a184-6aa885e89af7)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee0b4ea2-ecd1-45f9-a8b5-f5268024928a)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e0f3fc83-aaaa-4dba-8865-40d59e6c1d30)
+
+
+
+#### BPSK Demodultaion Discusion 
+
+Ultimately, the digital signal without the comparator isn't an exact copy due to the low-pass filter's limited ability to sharply filter out unwanted frequencies, resulting in slight distortion. A comparator and a reference signal were employed to establish a cutoff point. Where anything above this point represents a '1,' while anything below signifies a '0.' If this reference point were to be adjusted, it could fundamentally alter the signal's appearance.
+
+
 ## QPSK Theory  
 
 Quadrature Phase Shift Keying (QPSK) is a digital modulation method that represents binary data using four distinct phase states: 0, 90, 180, and 270 degrees. Each phase state corresponds to a unique pair of binary bits, allowing two bits to be transmitted per symbol. This allows QPSK  to be bandwidth efficent.
@@ -195,7 +242,7 @@ As with the QPSK demoultaion, we cannot recover both I and Q singals at the same
 
 #### Lab Equiment QAM Demodulation Results  
 
-The figures below displays the discrimation of both 1kHz and 2khz singal and how we used the phase shifter block intorder to tune into the signal. 
+The figures below displays the discrimation of both 1kHz and 2kHz singal and how we used the phase shifter block in order to tune into the signal. 
 
 ![Part 4](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/aba58fa1-4f9a-445c-af18-bd97bd9b3232)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b5333441-5a7c-4f4a-a67a-87be29021896)

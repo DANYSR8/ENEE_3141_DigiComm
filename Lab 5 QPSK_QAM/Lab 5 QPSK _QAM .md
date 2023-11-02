@@ -145,7 +145,7 @@ We can also see how supsectiple a QPSK signal is to noise, by using the channel 
 ![6](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/106981f4-f92a-4350-8f9a-7485ebc5216e)
 ![0](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d155791e-5aa6-4bdd-8077-dace89e5f13c)
 
-Ultimeltey it can be seen that even with nosie being introduce it is possible to still make out some of the mian constellation points. 
+Ultimeltey it can be seen that even with nosie being introduce it is possible to still make out some of the main constellation points. 
 
 #### QPSK  Demodulation Discusions
 
@@ -165,7 +165,7 @@ The overall block digram below displays a simlar method to QPSK where the and I 
 
 #### Lab Equiment QAM Modulation Results  
 
-The figures below displays each of the mulptpyling block outputs, where the first is the 1kHz being used 
+The figures below illustrate the outputs of each multiplication block. In the first figure, you'll find the 1kHz sine wave in orange, along with the multiplication of the 100kHz cosine and 1kHz sine waveforms, showcased in blue. The second figure presents the 2kHz signal in blue, accompanied by the product of the 2kHz sine wave and the 100kHz carrier signal, beautifully displayed in orange.
 
 ![Part 1](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/82e79a2d-17ec-49b0-aba4-d8bab9d6a0af)
 ![1kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ec335874-3a90-4bc2-af1b-fd7391361d0f)
@@ -174,8 +174,9 @@ The figures below displays each of the mulptpyling block outputs, where the firs
 ![2kHz](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/560320df-3890-4e3d-904a-e754acbef986)
 
 
-The overall Addition of the two signals above result in the signal below 
+When the two signals above are added together, the resulting waveform is the one displayed below, which essentially represents the QAM signal to be transmitted
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea5e8d8c-ce1f-43e3-9965-7e8081e9ff0e)
 ![Addition](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/035af735-2800-48a8-a319-7da460c763c8)
 
 
@@ -184,6 +185,8 @@ The overall Addition of the two signals above result in the signal below
 
 ### QAM Demodulation
 #### QAM Demodulation Block Representation 
+
+As with the QPSK demoultaion, we cannot recover both I and Q singals at the same time therfore we apply the same discrimnation method can be applyed to tune in to one of the individual I or Q signals. Employing the a phase shifter along with multpliy it by the "lost carrier" in order to tune into the corrsponding I and Q signals. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/44dc509c-26c4-4517-a3e2-3ff81a49618d)
 

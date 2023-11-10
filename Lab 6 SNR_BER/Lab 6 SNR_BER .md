@@ -150,8 +150,16 @@ Noiseing 0dB Digital Signal with channel low pass
 
 
 ### Lab Equipment BER
+#### Characterrising Bandpass Low Pass Filter Frequnecy Response 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/76333317-e4fc-40a6-926c-e079f5f39e9d)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7c976a8a-5726-4113-be7e-eee33f0c3d37)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7cd75f84-4ff2-48f8-9755-353cdebd3c53)
+
+
+#### Signal and Nosie Componets of Baseband 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/475d2210-1321-4043-8c69-389e6260d8f5)
 
@@ -159,13 +167,24 @@ Noiseing 0dB Digital Signal with channel low pass
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/151cfd41-554e-4026-b8ac-4a48e0dd9004)
 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/94fd6855-768e-478c-b586-c6d096c3816e)
+
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea4902dd-980a-416d-b277-e4fb5f5938ee)
+
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/47897e44-7e2b-4862-b903-69724e33a908)
+
+
+#### Nosiy Signal with Limits 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7178be38-2284-44bc-8152-53188e2b5a3b)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/cb6700f0-517c-4c60-a15a-424c984939d1)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d019c545-5776-49d5-91f7-fa772305f370)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/6bab85c8-e4c8-49b1-99e4-58d43453c296)
 
 
 ### BER Discusion 

@@ -89,7 +89,6 @@ This blocks takes two signals and multpily them together and output the product 
 ### SNR Theory 
 ### SNR Block Diagram Representation 
 
-The overall generation of a BPSK signal is straightforward, where the digital message is multiplied by a sinusoidal carrier signal. By doing so, the digital signal causes the phase of the sinusoidal carrier to shift by 180 degrees.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/749374ee-6b2e-4c4f-96b1-c528bbf488c1)
 
@@ -97,9 +96,53 @@ The overall generation of a BPSK signal is straightforward, where the digital me
 
 #### Adding Noise to Signal 
 
+Noiseing 20dB Digital Signal 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e0eda81f-ecb5-4bd7-bf9b-6910eae0246e)
+
+Nosie 6dB Digitial Signal 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/fa6c7d69-0a29-433a-8c43-7b18fe406d76)
+
+Nosie 0dB Digitial Signal 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/96102718-6f78-48bc-b996-1044986a686a)
+
+
 #### Band-Limiting the Nosiy Signal 
 
+
+Noiseing 20dB Digital Signal with channel low pass 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/57ca459d-5bac-47c9-a84f-59e2a3f5c3ff)
+
+Noiseing 6dB Digital Signal with channel low pass 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b8cf0be9-bfa7-49a3-9d0c-e83a6b5f7276)
+
+Noiseing 0dB Digital Signal with channel low pass 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/287feee3-35e3-44de-88b8-e764b90f7746)
+
+
 #### Determining SNR 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ac1331f3-5824-4fd5-8d4f-4749a88ff0fe)
+
+
+#### Eye Diagrams 
+
+![20dB VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/84d17e8f-363d-4567-b7c6-0ad0e4956e3e)
+
+![6dB VCO](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/6e0c9ca7-811a-4d11-94ef-25cdd6668c83)
+
+![0dB VCO ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e8370ef2-3985-4049-bdaa-aad902e07e78)
+
+
+![lower VCO Fre ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/13836f31-0a23-4ebb-8f72-f31bba014f90)
+
+![High VCO Fre ](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/73770fd6-a321-421f-96c2-29245e528c14)
+
 
 ### SNR Discusion 
 
@@ -109,6 +152,22 @@ The overall generation of a BPSK signal is straightforward, where the digital me
 
 
 ### Lab Equipment BER
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7cd75f84-4ff2-48f8-9755-353cdebd3c53)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/475d2210-1321-4043-8c69-389e6260d8f5)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f649f28b-2668-46fd-be74-a212e0a78810)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/151cfd41-554e-4026-b8ac-4a48e0dd9004)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea4902dd-980a-416d-b277-e4fb5f5938ee)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7178be38-2284-44bc-8152-53188e2b5a3b)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/cb6700f0-517c-4c60-a15a-424c984939d1)
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d019c545-5776-49d5-91f7-fa772305f370)
 
 
 ### BER Discusion 

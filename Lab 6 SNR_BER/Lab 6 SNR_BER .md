@@ -92,7 +92,7 @@ Signal-to-Noise Ratio (SNR) is a fundamental concept in communication systems, r
 
 ### SNR Block Diagram Representation 
 
-The two figures below displays the setup used to genterate a digtial singal that would expectaci noise. While the fist block diagrams displays the digtial singal experacting all the noise, the second displays the use of a Baseband Low Pass filter filtering out the higler frequecys of the noise. 
+The two figures below display the setup used to generate a digital signal that would encounter noise. While the first block diagram displays the digital signal experiencing all the noise, the second displays the use of a Baseband Low Pass filter filtering out the higher frequencies of the noise.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bdbee5a8-dcc1-49f5-ab48-372029fd9e00)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7d640183-367d-4701-85de-7a8073eca9b2)
@@ -100,7 +100,7 @@ The two figures below displays the setup used to genterate a digtial singal that
 ### Emona Online Results 
 #### Adding Noise to Signal 
 
-The figuurs below display increasering amount of noise the digtial singal is expecting starting from 20dB and working its way down to 0dB, where in essnes the nosie is the same levl of magniude as the signal. It can be seen that the digtial signal becomes unrecongizle quickly when introdunceing hudge amount of noise 
+The figures below display increasing amounts of noise that the digital signal is exposed to, starting from 20dB and working its way down to 0dB, where essentially the noise is at the same magnitude level as the signal. It can be seen that the digital signal becomes unrecognizable quickly when introducing a huge amount of noise.
 
 Noise 20dB Digital Signal 
 
@@ -117,29 +117,29 @@ Nosie 0dB Digitial Signal
 
 #### Band-Limiting the Nosiy Signal 
 
-The figures follow the same setup as before but in this case the an Basebamd Low Pass filtrer was implmented in order to limit the amount of noise to seen by the signal and in short maitian the orginal signal. But we can see the more noise that is intorduce to the signal the filter will try to do it best as in maintian the orginal singal but will evneullty lead to the flat section of the digtal section to become waving and vary in there amplitude. This can be seen in the 0dB figure. 
+The figures below follow the same setup as before, but in this case, a Baseband Low Pass filter was implemented to limit the amount of noise seen by the signal and, in short, maintain the original signal. However, we can observe that as more noise is introduced to the signal, the filter will attempt its best to maintain the original signal but will eventually lead to the flat section of the digital signal becoming wavy and varying in amplitude. This effect is evident in the figure with a 0dB.
 
-Noiseing 20dB Digital Signal with channel low pass 
+Noise 20dB Digital Signal with channel low pass 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/57ca459d-5bac-47c9-a84f-59e2a3f5c3ff)
 
-Noiseing 6dB Digital Signal with channel low pass 
+Noise 6dB Digital Signal with channel low pass 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b8cf0be9-bfa7-49a3-9d0c-e83a6b5f7276)
 
-Noiseing 0dB Digital Signal with channel low pass 
+Noise 0dB Digital Signal with channel low pass 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/287feee3-35e3-44de-88b8-e764b90f7746)
 
 
 #### Determining SNR 
 
-The table below was acomplised by mesuring the RMS volatge values of the corresioling singal by messuring each indicula while the other would be disconnected from the adder. The value would then be subsituded into the equation seen below to get there SNR in both ratio and Logarthimic forms.
+The table below was compiled by measuring the RMS voltage values of the corresponding signal. Each signal was measured individually while the other was disconnected from the adder. The obtained values were then substituted into the equation seen below to calculate their Signal-to-Noise Ratio (SNR) in both ratio and logarithmic forms.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3df5475a-2104-4b21-bbb9-0aa2c1638e0c)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3f04b160-dc94-4533-860a-9d8e856d3b2c)
 
-As for calutaing the SNR using the altenative way the equation below was implmented, and the entireitly of the data colected can be seen in the table below aswell. 
+As for calculating the SNR using the alternative method, the equation below was implemented, and the entirety of the data collected can be seen in the table below as well.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2bf67b97-3696-4346-b7ab-31345bd727d1)
 
@@ -162,19 +162,17 @@ As for calutaing the SNR using the altenative way the equation below was implmen
 
 ### SNR Discusion 
 
-The nosie genrator module seems to be modleing white guassina noise where the amount of noise incresear the lower the dB value is. In a sense the 20dB meaning the nosie it 75% smller than the magnitude of the orginal incoming signal, and 0dB menans the niosie and singal have the same magunide compared to each other. The actual SNR ratio tells us the how many times the signal is stroger to the nosie, give a direct scalar factor. Eventhough the we calulcated the SNR useing to deffent method the produce simlar results dut to the fact that we are messuring the diffrence between signal and nosie which is somthing that can not be charistcly change no matter which way you calcluate the SNR. In doing so we can expect the SNR to lower the more the nosie increse since the SNR is tell us the difrrenc of Singal magniude compared to the Nosie magniude , so the lower this vlaue is the more prevnely the nosie is in the transimision of the signal.   
+The noise generator module seems to be modeling white Gaussian noise, where the amount of noise increases as the dB value decreases. In a sense, a 20dB value implies that the noise is 75% smaller than the magnitude of the original incoming signal, and a 0dB value means the noise and signal have the same magnitude compared to each other. The actual Signal-to-Noise Ratio (SNR) tells us how many times the signal is stronger than the noise, providing a direct scalar factor. Even though we calculated the SNR using two different methods, they produced similar results due to the fact that we are measuring the difference between signal and noise, which is something that cannot be characteristically changed regardless of how you calculate the SNR. In doing so, we can expect the SNR to decrease as the noise increases, since the SNR indicates the difference in signal magnitude compared to the noise magnitude. Therefore, the lower this value, the more prevalent the noise is in the transmission of the signal.  
 
 ## BER
 ### BER Theory 
 The concept of Bit Error Rate (BER) is fundamental in digital communication systems. BER quantifies the accuracy of transmitted data by measuring the ratio of received bits with errors to the total number of transmitted bits. A lower BER indicates a higher quality of communication, reflecting the system's ability to transmit data accurately
 
-### Block Diagram Representation 
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/93e81fa8-f09e-4218-8ff4-d751a027019e)
-
 
 ### Lab Equipment BER
 #### Characterrising Bandpass Low Pass Filter Frequnecy Response 
+
+The figures below display experimental data collected to determine the characteristics and specifications of the Bandpass Filter. This was achieved by adjusting the frequency of a constant magnitude AC signal, recording the filter's output, and plotting the results. The last figure in this section displays a feature that our oscilloscope contains, where the above process was done automatically
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/76333317-e4fc-40a6-926c-e079f5f39e9d)
 
@@ -182,33 +180,45 @@ The concept of Bit Error Rate (BER) is fundamental in digital communication syst
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7cd75f84-4ff2-48f8-9755-353cdebd3c53)
 
+### Block Diagram Representation 
+
+The block diagram below illustrates the overall connection used in setting up a signal and noise composite that will travel through a baseband channel. It ensures it's a digital signal that is being added by noise, which can be controlled and given a DC offset
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/93e81fa8-f09e-4218-8ff4-d751a027019e)
+
 
 #### Signal and Nosie Componets of Baseband 
 
+This section presents the results gathered and how Signal-to-Noise Ratio (SNR)has an impact on Bit Error Rate (BER). The images illustrate the digital signal represented by an orange waveform and the noise depicted by a blue waveform. Furthermore, the corresponding FFT (Fast Fourier Transform) for the frequency cutoff is shown, revealing how it influences the amount of noise introduced to the signal.
+
+High Frequency Cutoff --- > More Noise Present 
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/475d2210-1321-4043-8c69-389e6260d8f5)
+
+Lower Frequency Cutoff --- > Less Noise Present 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/f649f28b-2668-46fd-be74-a212e0a78810)
 
+The figures below displays the output of the baseband channel, showcasing the combined effects of the signal and noise. The accompanying table presents the measured values, with the first row having a noise level of 0dB and the second row featuring a noise level of 20dB. The final table displays the magnitude measured at a frequency where it is expected that the magnitude will differ by 3dB. However, in this case, we observe a difference of 5dB.
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/151cfd41-554e-4026-b8ac-4a48e0dd9004)
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/94fd6855-768e-478c-b586-c6d096c3816e)
+![Table](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/94fd6855-768e-478c-b586-c6d096c3816e)
 
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ea4902dd-980a-416d-b277-e4fb5f5938ee)
-
-
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/47897e44-7e2b-4862-b903-69724e33a908)
+![Table](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/47897e44-7e2b-4862-b903-69724e33a908)
 
 
 #### Nosiy Signal with Limits 
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7178be38-2284-44bc-8152-53188e2b5a3b)
+These set of figures illustrates the setup utilized to measure the occurrence of bit errors. The basic setup involves using a replicated digital signal for comparison with the transmitted signal. If the transmitted signal does not match the replicated signal, an error is recorded. An XOR gate is employed for this purpose; when the two signals match, it outputs a 0, indicating no error. Conversely, a difference triggers a 1, incrementing the error count. This method of checking for bit errors requires that the transmitted signal and the replicated signal be in phase; otherwise, the error counter would consistently report errors for the entire signal.
+
+The figure depicts spikes representing syncing spikes used to align the signals. The initial figure shows the digital signal out of phase, while the second figure illustrates the two signals perfectly in sync. The table ultimately presents the two digital signals in sync, with the only variable being the level of noise introduced to the transmitted signal. The synchronized signal allows us to evaluate how noise contributes to bit errors. Ultimately, our measured results demonstrate that a higher Signal-to-Noise Ratio (SNR) results in fewer bit errors, highlighting the correlation between lower noise levels and enhanced signal integrity.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/cb6700f0-517c-4c60-a15a-424c984939d1)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d019c545-5776-49d5-91f7-fa772305f370)
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/6bab85c8-e4c8-49b1-99e4-58d43453c296)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/38f4e207-b4f2-405d-bb89-d4b6c67f174b)
 
 
 ### BER Discusion 

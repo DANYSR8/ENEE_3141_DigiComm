@@ -90,8 +90,6 @@ This blocks takes two signals and multpily them together and output the product 
 ### SNR Block Diagram Representation 
 
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/749374ee-6b2e-4c4f-96b1-c528bbf488c1)
-
 ### Emona Online Results 
 
 #### Adding Noise to Signal 

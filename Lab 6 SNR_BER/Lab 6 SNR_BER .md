@@ -87,15 +87,22 @@ This blocks takes two signals and multpily them together and output the product 
 
 ## SNR
 ### SNR Theory 
+
+Signal-to-Noise Ratio (SNR) is a fundamental concept in communication systems, representing the ratio of the signal strength to the background noise level. It quantifies the quality and reliability of a signal by comparing the power of the transmitted signal to the power of any interference or noise present. A higher SNR indicates a cleaner and more reliable signal, making it easier for receivers to distinguish the intended information from unwanted disturbances.
+
 ### SNR Block Diagram Representation 
+
+The two figures below displays the setup used to genterate a digtial singal that would expectaci noise. While the fist block diagrams displays the digtial singal experacting all the noise, the second displays the use of a Baseband Low Pass filter filtering out the higler frequecys of the noise. 
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bdbee5a8-dcc1-49f5-ab48-372029fd9e00)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7d640183-367d-4701-85de-7a8073eca9b2)
 
 ### Emona Online Results 
-
 #### Adding Noise to Signal 
 
-Noiseing 20dB Digital Signal 
+The figuurs below display increasering amount of noise the digtial singal is expecting starting from 20dB and working its way down to 0dB, where in essnes the nosie is the same levl of magniude as the signal. It can be seen that the digtial signal becomes unrecongizle quickly when introdunceing hudge amount of noise 
+
+Noise 20dB Digital Signal 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e0eda81f-ecb5-4bd7-bf9b-6910eae0246e)
 
@@ -110,6 +117,7 @@ Nosie 0dB Digitial Signal
 
 #### Band-Limiting the Nosiy Signal 
 
+The figures follow the same setup as before but in this case the an Basebamd Low Pass filtrer was implmented in order to limit the amount of noise to seen by the signal and in short maitian the orginal signal. But we can see the more noise that is intorduce to the signal the filter will try to do it best as in maintian the orginal singal but will evneullty lead to the flat section of the digtal section to become waving and vary in there amplitude. This can be seen in the 0dB figure. 
 
 Noiseing 20dB Digital Signal with channel low pass 
 
@@ -125,6 +133,15 @@ Noiseing 0dB Digital Signal with channel low pass
 
 
 #### Determining SNR 
+
+The table below was acomplised by mesuring the RMS volatge values of the corresioling singal by messuring each indicula while the other would be disconnected from the adder. The value would then be subsituded into the equation seen below to get there SNR in both ratio and Logarthimic forms.
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3df5475a-2104-4b21-bbb9-0aa2c1638e0c)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3f04b160-dc94-4533-860a-9d8e856d3b2c)
+
+As for calutaing the SNR using the altenative way the equation below was implmented, and the entireitly of the data colected can be seen in the table below aswell. 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/2bf67b97-3696-4346-b7ab-31345bd727d1)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ac1331f3-5824-4fd5-8d4f-4749a88ff0fe)
 
@@ -147,6 +164,9 @@ Noiseing 0dB Digital Signal with channel low pass
 
 
 ## BER
+### BER Theory 
+The concept of Bit Error Rate (BER) is fundamental in digital communication systems. BER quantifies the accuracy of transmitted data by measuring the ratio of received bits with errors to the total number of transmitted bits. A lower BER indicates a higher quality of communication, reflecting the system's ability to transmit data accurately
+
 ### Block Diagram Representation 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/93e81fa8-f09e-4218-8ff4-d751a027019e)

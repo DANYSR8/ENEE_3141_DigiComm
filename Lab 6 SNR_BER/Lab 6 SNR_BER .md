@@ -88,7 +88,8 @@ This blocks takes two signals and multpily them together and output the product 
 ## SNR
 ### SNR Theory 
 ### SNR Block Diagram Representation 
-
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bdbee5a8-dcc1-49f5-ab48-372029fd9e00)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7d640183-367d-4701-85de-7a8073eca9b2)
 
 ### Emona Online Results 
 
@@ -147,6 +148,8 @@ Noiseing 0dB Digital Signal with channel low pass
 
 ## BER
 ### Block Diagram Representation 
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/93e81fa8-f09e-4218-8ff4-d751a027019e)
 
 
 ### Lab Equipment BER

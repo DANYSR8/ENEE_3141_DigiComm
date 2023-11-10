@@ -223,3 +223,4 @@ The figure depicts spikes representing syncing spikes used to align the signals.
 
 ### BER Discusion 
 
+Overall, we determined that the cutoff frequency of the baseband low-pass filter was around 1.5kHz, the same frequency at which the output is approximately 3dB lower than the original. Additionally, the digital data signal appears distorted due to the fact that the low-pass filter is filtering out the harmonics of the square wave in the digital signal. Regarding measuring the bit error rate, we were able to demonstrate that as the signal encounters more noise, bit errors become more prevalent, and vice versa.

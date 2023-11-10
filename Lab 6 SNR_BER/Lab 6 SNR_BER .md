@@ -162,6 +162,7 @@ As for calutaing the SNR using the altenative way the equation below was implmen
 
 ### SNR Discusion 
 
+The nosie genrator module seems to be modleing white guassina noise where the amount of noise incresear the lower the dB value is. In a sense the 20dB meaning the nosie it 75% smller than the magnitude of the orginal incoming signal, and 0dB menans the niosie and singal have the same magunide compared to each other. The actual SNR ratio tells us the how many times the signal is stroger to the nosie, give a direct scalar factor. Eventhough the we calulcated the SNR useing to deffent method the produce simlar results dut to the fact that we are messuring the diffrence between signal and nosie which is somthing that can not be charistcly change no matter which way you calcluate the SNR. In doing so we can expect the SNR to lower the more the nosie increse since the SNR is tell us the difrrenc of Singal magniude compared to the Nosie magniude , so the lower this vlaue is the more prevnely the nosie is in the transimision of the signal.   
 
 ## BER
 ### BER Theory 

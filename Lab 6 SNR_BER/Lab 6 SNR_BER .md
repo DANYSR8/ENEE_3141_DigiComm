@@ -104,12 +104,12 @@ The overall generation of a BPSK signal is straightforward, where the digital me
 ### SNR Discusion 
 
 
-### BER
-#### Block Diagram Representation 
+## BER
+### Block Diagram Representation 
 
 
-#### Lab Equipment BER
+### Lab Equipment BER
 
 
-#### BER Discusion 
+### BER Discusion 
 

@@ -25,3 +25,8 @@ Converting ACII to text
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/63366e98-8243-419b-9597-fd731c329103)
 
 
+GPS WORKING ON THE SAME ASK CODE 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4eaa2a6-7b41-4979-a3bc-3481440230df)
+
+GPS SENDINF THROUGH THE TRANMITTE NEED TO CONVERT TO ASCIIT FROM HEX 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a80e9b2b-99c7-4cb6-91af-6011e5fc4870)

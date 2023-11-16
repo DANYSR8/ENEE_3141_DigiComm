@@ -18,5 +18,10 @@
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9e8c4fc4-f4b0-43be-ac65-d8767a85d575)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9f572eed-3886-4e58-818c-903ee3ac6908)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b6773eeb-9f63-4ed2-9b02-7f462aeaa49c)
-![Uploading image.png…]()
+
+
+Converting ACII to text 
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e5e4ead4-907b-4592-9ce7-3ef3f54f3e9f)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/63366e98-8243-419b-9597-fd731c329103)
+
 

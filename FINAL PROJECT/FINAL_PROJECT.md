@@ -29,15 +29,16 @@ Having the modules set up with the two arduinos as displayed above, a simple ON 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/4f1d8b49-f087-4ab0-8a7a-f7935f8eee2b)
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bddb2e2c-e938-4617-9d01-47f71666ed3f)
-
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b78a3f6f-c7ef-4d35-a79d-dee7c8383080)
 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/91b46225-856c-41b0-92d9-0281eb737992)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/bddb2e2c-e938-4617-9d01-47f71666ed3f)
+
+
+
 
 
 ### Fixing ASK Transmitter 
-
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/91b46225-856c-41b0-92d9-0281eb737992)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7a635884-cb5b-4c52-bfac-75fc8c9fc4e7)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9e8c4fc4-f4b0-43be-ac65-d8767a85d575)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9f572eed-3886-4e58-818c-903ee3ac6908)

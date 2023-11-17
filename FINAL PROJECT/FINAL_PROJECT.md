@@ -53,19 +53,25 @@ Additionlly too see the modulated data GNU Radio was used to form the flow diarg
 
 ###  Converting ASCII to Readable Text 
 
-Now on the reciver side of the project the data the code displayed below can be use to convert the ASCII to readable text.  
+Now on the reciver side of the project the data the code displayed below can be use to convert the ASCII to readable text. In this case the message was hard coded to send one specigly message being hello. 
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/168849a4-8ce3-430a-af99-07e104afe273)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/63366e98-8243-419b-9597-fd731c329103)
 
-
 ### Setting Up GPS 
-GPS WORKING ON THE SAME ASK CODE
 
-Setting up the GPS module is stright foward using the liabry and the corresponiding finction displayed below.  
+Back to the transmitter side the next step involved setting up the GPS module. Which is stright foward by coneting the corresponding TX and RX pins to the ardunio and  using the liabry and corresponiding function displayed below. The module can be finicking if used inside, it recomded that it would be close to window inorder to have a stable connection to recieve data.  
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3801ade6-6dee-4c21-af2e-7ba83c1ad4b7)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4eaa2a6-7b41-4979-a3bc-3481440230df)
 
+Having this data being gather by the GPS module all that is left is to send the data through the transmitter module.
+
+
+### Decoding the Trasnmitted GPS Data 
 GPS SENDINF THROUGH THE TRANMITTE NEED TO CONVERT TO ASCIIT FROM HEX 
+
+Now having the GPS data being sent we can set up the recivcer end of the system with the code seen below. This will convert he data transmited data being sent as doubles to a string which is then display in the serial monitor.
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca3ec31f-d588-4e44-9eec-ec4bc2726347)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a80e9b2b-99c7-4cb6-91af-6011e5fc4870)

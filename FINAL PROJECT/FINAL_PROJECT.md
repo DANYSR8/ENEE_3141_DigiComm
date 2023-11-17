@@ -2,9 +2,9 @@
 
 ## Project Concept 
 
-This project idea is a continueation of a pervious project where the idea was to implement a GPS location module that would get location inodfarion of the modulae itself, Which would then be proscces by a microprocessor. This process data is then sent to a GMS/SIM module where the idea was that this module would send the data to a phone. This ultimely did not work due to diffcuitly in setting up the SIM card.
+This project idea is a continuation of a previous project where the objective was to implement a GPS location module to acquire location information of the module itself. This information would then be processed by a microprocessor. The processed data was intended to be sent to a GSM/SIM module with the idea of transmitting this data to a phone. However, this plan ultimately didn't work due to difficulties encountered in setting up the SIM card.
 
-This setback lead to this project where insted of using a GMS/SIM module it was switched out with an ASK 433mHz Transmitter and Reciver. This allowed for a quick and reailable way to transmitted the GPS data and have a plan expand this project.
+As a result of this setback, a new approach was adopted for this project. Instead of utilizing a GSM/SIM module, it was replaced with an ASK 433MHz Transmitter and Receiver. This modification allowed for a quick and reliable transmission of the GPS data and laid the groundwork for expanding this project.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/dd50e90b-ae71-4a4b-823d-92cc147fd82a)
 
@@ -12,13 +12,13 @@ This setback lead to this project where insted of using a GMS/SIM module it was 
 ## SETUP & Checking Modules Works
 ### Checking ASK Modules 
 
-To check that this ASK Transciver was working a quick tutorial was followed, and the module were wired as dislayed in the two figures below.   
+To verify the functionality of the ASK Transceiver, a brief tutorial was followed, and the modules were connected as illustrated in the two figures below.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/6aec165d-5470-423c-85c1-3214c24a996a)
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/c53f64e1-1265-4a8b-8e16-dd2334afa2b4)
 
-Having the modules set up with the two arduinos as displayed above, a simple ON and OFF signal was used to simualate a digital signal and see if the the transmitter is working. To dectect and see the transmitter working SDR Console was used to easilty detect the signals around the 433.92MHz carreir. Three dirffent digital signal sequence where ues to ensure that we were seeing the actual transmited signal and just not noise. The figure below displays each digital sequence used and there repective spectrum. 
+Upon setting up the modules with the two Arduinos as illustrated above, a straightforward ON and OFF signal was used to emulate a digital signal, testing the functionality of the transmitter. To ascertain the transmitter's operation,  SDR Console  was uesd to effortlessly detecting signals within the 433.92MHz carrier range. Three distinct digital signal sequences were utilized to confirm the presence of the transmitted signal amidst potential noise. The figure below showcases each digital sequence utilized and their respective spectra, offering a comprehensive view of the transmitted signals' characteristics.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b3d45b76-8264-4af3-aff4-816883333f67)
 
@@ -39,7 +39,7 @@ Having the modules set up with the two arduinos as displayed above, a simple ON 
 
 ### Fixing ASK Transmitter
 
-When anaylsing the spectrum previous the magtuie for the spike were very weak. So a step back was taken and it was recongise that the trasnmirtter was missing a coil that would help with transmittion of the signal. This coil is outline in the figure belew, once this comeponet was added back into the module a much clearler and signal can be observed. Additionally we change the data being transmitted to be a "char" array which was ultimely trasnitted as ASCII values.   
+When analyzing the previous spectrum, it can be seen that the magnitudes of the spikes were notably weak. After reassessing the setup, it was identified that the transmitter lacked a crucial coil that significantly aids in signal transmission. This missing component is outlined in the figure below. Once this component was reintegrated into the module, a significantly clearer signal became observable. Additionally, we opted to modify the transmitted data to a "char" array, ultimately transmitting it as ASCII values.   
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/1c37e4c0-9a4f-44cf-b86c-6f8bdd9e8ff1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7a635884-cb5b-4c52-bfac-75fc8c9fc4e7)
@@ -53,14 +53,14 @@ Additionlly too see the modulated data GNU Radio was used to form the flow diarg
 
 ###  Converting ASCII to Readable Text 
 
-Now on the reciver side of the project the data the code displayed below can be use to convert the ASCII to readable text. In this case the message was hard coded to send one specigly message being hello. 
+On the receiver side of the project, the code displayed below can be utilized to convert ASCII data into readable text. In this instance, the transmitted message was hardcoded to convey a specific phrase, which in this case was 'hello.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/168849a4-8ce3-430a-af99-07e104afe273)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/63366e98-8243-419b-9597-fd731c329103)
 
 ### Setting Up GPS 
 
-Back to the transmitter side the next step involved setting up the GPS module. Which is stright foward by coneting the corresponding TX and RX pins to the ardunio and  using the liabry and corresponiding function displayed below. The module can be finicking if used inside, it recomded that it would be close to window inorder to have a stable connection to recieve data.  
+Back to the transmitter side the next step involved setting up the GPS module. This process is straightforward, involving the connection of the respective TX and RX pins to the Arduino and utilizing the library with its corresponding functions, as demonstrated below. It's noteworthy that the module might exhibit sensitivity when used indoors; hence, it is advisable to position it near a window to ensure a stable connection for receiving data.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3801ade6-6dee-4c21-af2e-7ba83c1ad4b7)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4eaa2a6-7b41-4979-a3bc-3481440230df)
@@ -69,13 +69,14 @@ Having this data being gather by the GPS module all that is left is to send the 
 
 
 ### Decoding the Trasnmitted GPS Data 
-GPS SENDINF THROUGH THE TRANMITTE NEED TO CONVERT TO ASCIIT FROM HEX 
 
-Now having the GPS data being sent we can set up the recivcer end of the system with the code seen below. This will convert he data transmited data being sent as doubles to a string which is then display in the serial monitor.
+With the GPS data successfully transmitted, the receiver end of the system can now be configured using the following code. This code snippet is responsible for converting the received data, transmitted as doubles, into a string format. Subsequently, this converted data is displayed on the serial monitor for observation.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca3ec31f-d588-4e44-9eec-ec4bc2726347)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/32af07e1-0d7e-4734-aad3-6379d6f6feb6)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee4e83ea-6945-49b0-9dac-de14ff3eb5c0)
 
 
-As we can see above the coresponding data if it were to be comapred and  tranlated using the ASCII Table we see that the data correspons to 39.68 which is the correct values for the latidtuide. 
+Certainly! Here's a refined version:
+
+As observed above, upon comparing and translating the corresponding data using the ASCII Table, we find that the data corresponds to '39.68,' which represents the accurate values for the latitude.

@@ -37,20 +37,34 @@ Having the modules set up with the two arduinos as displayed above, a simple ON 
 
 
 
-### Fixing ASK Transmitter 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/91b46225-856c-41b0-92d9-0281eb737992)
+### Fixing ASK Transmitter
+
+When anaylsing the spectrum previous the magtuie for the spike were very weak. So a step back was taken and it was recongise that the trasnmirtter was missing a coil that would help with transmittion of the signal. This coil is outline in the figure belew, once this comeponet was added back into the module a much clearler and signal can be observed. Additionally we change the data being transmitted to be a "char" array which was ultimely trasnitted as ASCII values.   
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/1c37e4c0-9a4f-44cf-b86c-6f8bdd9e8ff1)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/7a635884-cb5b-4c52-bfac-75fc8c9fc4e7)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9e8c4fc4-f4b0-43be-ac65-d8767a85d575)
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9f572eed-3886-4e58-818c-903ee3ac6908)
+
+Additionlly too see the modulated data GNU Radio was used to form the flow diargram seen below as well as display the frequency and time domain the the modulated signal.  
+
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/b6773eeb-9f63-4ed2-9b02-7f462aeaa49c)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/9f572eed-3886-4e58-818c-903ee3ac6908)
 
 
-Converting ACII to text 
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/e5e4ead4-907b-4592-9ce7-3ef3f54f3e9f)
+###  Converting ASCII to Readable Text 
+
+Now on the reciver side of the project the data the code displayed below can be use to convert the ASCII to readable text.  
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/168849a4-8ce3-430a-af99-07e104afe273)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/63366e98-8243-419b-9597-fd731c329103)
 
 
-GPS WORKING ON THE SAME ASK CODE 
+### Setting Up GPS 
+GPS WORKING ON THE SAME ASK CODE
+
+Setting up the GPS module is stright foward using the liabry and the corresponiding finction displayed below.  
+
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/3801ade6-6dee-4c21-af2e-7ba83c1ad4b7)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/d4eaa2a6-7b41-4979-a3bc-3481440230df)
 
 GPS SENDINF THROUGH THE TRANMITTE NEED TO CONVERT TO ASCIIT FROM HEX 

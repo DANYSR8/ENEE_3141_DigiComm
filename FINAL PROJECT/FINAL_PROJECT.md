@@ -74,4 +74,8 @@ GPS SENDINF THROUGH THE TRANMITTE NEED TO CONVERT TO ASCIIT FROM HEX
 Now having the GPS data being sent we can set up the recivcer end of the system with the code seen below. This will convert he data transmited data being sent as doubles to a string which is then display in the serial monitor.
 
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ca3ec31f-d588-4e44-9eec-ec4bc2726347)
-![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/a80e9b2b-99c7-4cb6-91af-6011e5fc4870)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/32af07e1-0d7e-4734-aad3-6379d6f6feb6)
+![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee4e83ea-6945-49b0-9dac-de14ff3eb5c0)
+
+
+As we can see above the coresponding data if it were to be comapred and  tranlated using the ASCII Table we see that the data correspons to 39.68 which is the correct values for the latidtuide. 

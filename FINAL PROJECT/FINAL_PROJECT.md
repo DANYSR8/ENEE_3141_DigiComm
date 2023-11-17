@@ -76,7 +76,4 @@ With the GPS data successfully transmitted, the receiver end of the system can n
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/32af07e1-0d7e-4734-aad3-6379d6f6feb6)
 ![image](https://github.com/DANYSR8/ENEE_3141_DigiComm/assets/117769464/ee4e83ea-6945-49b0-9dac-de14ff3eb5c0)
 
-
-Certainly! Here's a refined version:
-
 As observed above, upon comparing and translating the corresponding data using the ASCII Table, we find that the data corresponds to '39.68,' which represents the accurate values for the latitude.
